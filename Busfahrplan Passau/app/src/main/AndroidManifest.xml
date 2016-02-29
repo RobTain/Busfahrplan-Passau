@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="formula.freeversion"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".StartActivity"
+            android:label="@string/app_name"
+            android:windowSoftInputMode="stateHidden"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity android:name=".BuyPremiumActivity"
+            android:label="Premium kaufen"
+            android:windowSoftInputMode="stateHidden"
+            android:theme="@style/AppTheme.NoActionBar"
+            android:screenOrientation="portrait"/>
+        <activity android:name=".ContactActivity"
+                  android:label="Kontakt"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".LexiconActivity"
+                  android:label="Lexikon"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".RateAppActivity"
+                  android:label="App bewerten"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".SearchActivity"
+                  android:label="Formel suchen"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".ShowEntryActivity"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".SubmenuAccountingActivity"
+                  android:label="Formelsammlung für Rechnungswesen"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".SubmenuBiologyActivity"
+                  android:label="Formelsammlung für Biologie"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".SubmenuChemistryActivity"
+                  android:label="Formelsammlung für Chemie"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".SubmenuInformaticActivity"
+                  android:label="Formelsammlung für Informatik"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".SubmenuMathActivity"
+                  android:label="Formelsammlung für Mathematik"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:screenOrientation="portrait"/>
+        <activity android:name=".SubmenuPhysicActivity"
+                  android:label="Formelsammlung für Physik"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:screenOrientation="portrait"/>
+    </application>
+
+</manifest>
