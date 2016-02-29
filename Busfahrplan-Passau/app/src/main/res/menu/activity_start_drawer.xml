@@ -6,9 +6,42 @@
         <menu>
 
             <item
-                android:id="@+id/nav_line_1_Lindau_Kohlbruck"
-                android:title="@string/nav_line_1_2_Lindau_Kohlbruck"
+                android:id="@+id/nav_1_2_Lindau_Kohlbruck"
+                android:title="@string/nav_1_2_Lindau_Kohlbruck"
                 android:icon="@drawable/line_1_2"/>
+
+            <item
+                android:id="@+id/nav_1_Kohlbruck_Lindau"
+                android:title="@string/nav_1_Kohlbruck_Lindau"
+                android:icon="@drawable/line_1"/>
+
+            <item
+            android:id="@+id/nav_3_4_Baeckerholz_Achleiten"
+            android:title="@string/nav_3_4_Baeckerholz_Hochstein_Achleiten"
+            android:icon="@drawable/line_3_4"/>
+
+            <item
+                android:id="@+id/nav_5_6_Kohlbruck_Patriching"
+                android:title="@string/nav_5_6_Kohlbruck_Patriching"
+                android:icon="@drawable/line_5_6"/>
+            <item
+                android:id="@+id/nav_5_6_Patriching_Kohlbruck"
+                android:title="@string/nav_5_6_Patriching_Kohlbruck"
+                android:icon="@drawable/line_5_6"/>
+            <item
+                android:id="@+id/nav_7_Eichendorffstr_Ries"
+                android:title="@string/nav_7_Eichendorffstr_Ries"
+                android:icon="@drawable/line_7"/>
+            <item
+                android:id="@+id/nav_line_2_Kohlbruck_Zieglreuth"
+                android:title="@string/nav_2_Kohlbruck_Zieglreuth"
+                android:icon="@drawable/line_2"/>
+            <item
+                android:id="@+id/nav_2_Kohlbruck_Zieglreuth"
+                android:title="@string/nav_2_Kohlbruck_Zieglreuth"
+                android:icon="@drawable/line_2"/>
+
+
 
             <!-- android:icon="@drawable/ic_menu_share" TODO -->
 

@@ -5,6 +5,55 @@
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="start_search_input_field">Buslinie suchen</string>
     <string name="search">Suchen</string>
-    <string name="nav_line_1_2_Lindau_Kohlbruck">Lindau/Ziegelreuth - ZOB -
+    <string name="nav_1_2_Lindau_Kohlbruck">Lindau/Ziegelreuth - ZOB -
         Kohlbruck/Erlebnisbad PEB</string>
+    <string name="nav_1_Kohlbruck_Lindau">Kohlbruck/Erlebnisbad
+        PEB - ZOB - Lindau</string>
+    <string name="nav_2_Kohlbruck_Zieglreuth">Kohlbruck/Erlebnisbad
+        PEB - ZOB - Zieglreuth</string>
+    <string name="nav_3_4_Baeckerholz_Hochstein_Achleiten">Bäckerholz
+        /Hochstein - ZOB - Achleiten</string>
+    <string name="nav_3_Achleiten_Baeckerholz">Achleiten - ZOB -
+        Bäckerholz</string>
+    <string name="nav_4_Achleiten_Hochstein">Achleiten - ZOB -
+        Hochstein</string>
+    <string name="nav_5_6_Kohlbruck_Patriching">Kohlbruck - ZOB - Patriching
+        /Schalding l.d.D.</string>
+    <string name="nav_5_6_Patriching_Kohlbruck">Patriching
+        /Schalding l.d.D. - ZOB - Kohlbruck</string>
+    <string name="nav_7_Eichendorffstr_Ries">Eichendorffstr. - ZOB -
+    Ries</string>
+    <string name="nav_7_Ries_Eichendorffstr">Ries - ZOB -
+        Eichendorfstr.</string>
+    <string name="nav_line_8_9_Kohlbruck_Koenigschalding">Kohlbruck
+        /Erlebnisbad PEB - ZOB - Königschalding</string>
+    <string name="nav_8_9_Koenigschalding_Kohlbruck">Königschalding
+    - ZOB - Kohlbruck/Erlebnisbad PEB</string>
+    <string name="nav_10_ZOB_Schalding">ZOB - Schalding r.d.D.</string>
+    <string name="nav_10_Schalding_ZOB">Schalding r.d.D. - ZOB</string>
+    <string name="nav_11_ZOB_Senefelderstr">ZOB - Senefelderstr.</string>
+    <string name="nav_11_Senefelderstr_ZOB">Senefelderstr. - ZOB</string>
+    <string name="nav_K1_Lueftlberg_Mariahilf-Grenzstation">Lüftlberg - ZOB
+    - Mariahilf-Grenzstation</string>
+    <string name="nav_K1_Mariahilf-Grenzstation_Lueftlberg">Mariahilf
+        -Grenzstation - ZOB - Lüftlberg</string>
+    <string name="nav_K2_Sieglberg_Muehltal">Sieglberg/Sieglgut - ZOB -
+        Mühltal/Lindental</string>
+    <string name="nav_K2_Muehltal_Sieglberg">Mühltal/Lindental - ZOB -
+        Sieglberg/Sieglgut</string>
+    <string name="nav_K3_Klinikum_Hoegl">Klinikum - ZOB - Am
+        Högl/Sulzsteg</string>
+    <string name="nav_K3_Hoegl_Klinikum">Am Högl/Sulzsteg - ZOB -
+        Klinikum</string>
+    <string name="nav_K4_ZOB_Sperrwies">ZOB - Sperrwies</string>
+    <string name="nav_K4_Sperrwies_ZOB">Sperrwies - ZOB</string>
+    <string name="nav_78_ZOB_Schalding">ZOB - Schalding r.d.D.</string>
+    <string name="nav_78_Schalding_ZOB">Schalding r.d.D. - ZOB</string>
+    <string name="nav_79_ZOB_Eichendorffstr">ZOB - Eichendorffstr.</string>
+    <string name="nav_79_Eichendorffstr_ZOB">Eichendorffstr. - ZOB</string>
+    <string name="nav_CB_Bahnhofstr_Roemerplatz">Parkhaus Bahnhofstr. - ZOB
+    - Römerplatz</string>
+    <string name="nav_CB_Roemerplatz_Bahnhofstr">Römerplatz - ZOB -
+        Parkhaus Bahnhofstr</string>
+
 </resources>
