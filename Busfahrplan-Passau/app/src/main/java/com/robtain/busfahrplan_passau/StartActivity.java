@@ -21,6 +21,7 @@ public class StartActivity extends AppCompatActivity {
     public boolean premiumVersion = false;
     private Button search;
 
+    //TODO refactoring for new App
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
