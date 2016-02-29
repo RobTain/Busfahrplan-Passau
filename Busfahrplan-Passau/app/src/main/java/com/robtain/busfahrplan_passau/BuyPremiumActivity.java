@@ -18,7 +18,7 @@ public class BuyPremiumActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         buyPremium();
-
+//
     }
 
     public void buyPremium() {

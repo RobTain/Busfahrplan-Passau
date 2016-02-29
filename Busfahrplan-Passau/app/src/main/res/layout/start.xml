@@ -1,74 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--?attr/actionBarSize -->
-<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
-                                        xmlns:app="http://schemas.android.com/apk/res-auto"
-                                        xmlns:tools="http://schemas.android.com/tools"
-                                        android:id="@+id/drawer_layout"
-                                        android:layout_width="match_parent"
-                                        android:layout_height="match_parent"
-                                        android:fitsSystemWindows="true"
-                                        tools:openDrawer="start"
-                                        android:background="@drawable/background_start">
+<android.support.v4.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:openDrawer="start">
+    <!--
+    set a background
+    android:background=""
+     -->
+
 
     <include
         layout="@layout/app_bar_start"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
 
-    <RelativeLayout
+
+
+    <FrameLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingLeft="@dimen/fab_margin"
         android:paddingRight="@dimen/fab_margin"
         android:paddingTop="@dimen/fab_margin">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <EditText
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/start_search_input_field"
+                android:textStyle="italic"
+                android:textColor="#3d3535"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:id="@+id/inputStartView"
+                />
 
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="@dimen/nav_header_height"
-            android:textAppearance="?android:attr/textAppearanceLarge"
-            android:text="\n Version 0.06.2.3"
-            android:drawableTop="@drawable/logo_title"
-            android:layout_centerHorizontal="true"
-            android:id="@+id/Logo"
-            android:textAlignment="center"
-            android:textColor="@color/colorStartFont"/>
 
-        <EditText
-            android:layout_width="fill_parent"
-            android:layout_height="wrap_content"
-            android:text="Formel suchen..."
-            android:textStyle="italic"
-            android:textColor="#3d3535"
-            android:layout_centerInParent="true"
-            android:layout_centerHorizontal="true"
-            android:layout_centerVertical="true"
-            android:id="@+id/inputStartView"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/search"
+                android:layout_centerInParent="true"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/inputStartView"
+                android:id="@+id/searchButtonStartView"
+                android:layout_marginTop="@dimen/activity_vertical_margin"
+                android:layout_gravity="center_horizontal"/>
 
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Suchen"
-            android:layout_centerInParent="true"
-            android:layout_centerHorizontal="true"
-            android:layout_below="@+id/inputStartView"
-            android:id="@+id/searchButtonStartView"
-            android:layout_marginTop="@dimen/activity_vertical_margin"
-            />
 
-    </RelativeLayout>
+
+        </LinearLayout>
+
+
+
+
+    </FrameLayout>
 
 
     <android.support.design.widget.NavigationView
         android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
+        android:layout_width="fill_parent"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_start"
-        app:menu="@menu/activity_start_drawer" />
+        app:menu="@menu/activity_start_drawer" >
+
+    </android.support.design.widget.NavigationView>
 
 </android.support.v4.widget.DrawerLayout>
 

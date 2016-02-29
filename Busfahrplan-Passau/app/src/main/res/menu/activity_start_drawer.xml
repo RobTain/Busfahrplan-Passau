@@ -2,12 +2,19 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <item android:title="Formelsammlungen">
+    <item android:title="Buslinien">
         <menu>
+
+            <item
+                android:id="@+id/nav_line_1_Lindau_Kohlbruck"
+                android:title="@string/nav_line_1_2_Lindau_Kohlbruck"
+                android:icon="@drawable/line_1_2"/>
+
+            <!-- android:icon="@drawable/ic_menu_share" TODO -->
+
             <item
                 android:id="@+id/mathematicsNavMenu"
                 android:title="Mathematik" />
-            <!-- android:icon="@drawable/ic_menu_share" TODO -->
             <item
                 android:id="@+id/physicsNavMenu"
                 android:title="Physik" />
