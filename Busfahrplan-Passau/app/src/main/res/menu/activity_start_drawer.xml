@@ -14,11 +14,24 @@
                 android:id="@+id/nav_1_Kohlbruck_Lindau"
                 android:title="@string/nav_1_Kohlbruck_Lindau"
                 android:icon="@drawable/line_1"/>
+            <item
+                android:id="@+id/nav_2_Kohlbruck_Zieglreuth"
+                android:title="@string/nav_2_Kohlbruck_Zieglreuth"
+                android:icon="@drawable/line_2"/>
 
             <item
-            android:id="@+id/nav_3_4_Baeckerholz_Achleiten"
+            android:id="@+id/nav_3_4_Baeckerholz_Hochstein_Achleiten"
             android:title="@string/nav_3_4_Baeckerholz_Hochstein_Achleiten"
             android:icon="@drawable/line_3_4"/>
+
+            <item
+                android:id="@+id/nav_3_Achleiten_Baeckerholz"
+                android:title="@string/nav_3_Achleiten_Baeckerholz"
+                android:icon="@drawable/line_3"/>
+            <item
+                android:id="@+id/nav_4_Achleiten_Hochstein"
+                android:title="@string/nav_4_Achleiten_Hochstein"
+                android:icon="@drawable/line_4"/>
 
             <item
                 android:id="@+id/nav_5_6_Kohlbruck_Patriching"
@@ -33,13 +46,88 @@
                 android:title="@string/nav_7_Eichendorffstr_Ries"
                 android:icon="@drawable/line_7"/>
             <item
-                android:id="@+id/nav_line_2_Kohlbruck_Zieglreuth"
-                android:title="@string/nav_2_Kohlbruck_Zieglreuth"
-                android:icon="@drawable/line_2"/>
+                android:id="@+id/nav_7_Ries_Eichendorffstr"
+                android:title="@string/nav_7_Ries_Eichendorffstr"
+                android:icon="@drawable/line_7"/>
             <item
-                android:id="@+id/nav_2_Kohlbruck_Zieglreuth"
-                android:title="@string/nav_2_Kohlbruck_Zieglreuth"
-                android:icon="@drawable/line_2"/>
+                android:id="@+id/nav_8_9_Kohlbruck_Koenigschalding"
+                android:title="@string/nav_8_9_Kohlbruck_Koenigschalding"
+                android:icon="@drawable/line_8_9"/>
+            <item
+                android:id="@+id/nav_10_ZOB_Schalding"
+                android:title="@string/nav_10_ZOB_Schalding"
+                android:icon="@drawable/line_10"/>
+
+            <item
+                android:id="@+id/nav_10_Schalding_ZOB"
+                android:title="@string/nav_10_Schalding_ZOB"
+                android:icon="@drawable/line_10"/>
+            <item
+                android:id="@+id/nav_11_ZOB_Senefelderstr"
+                android:title="@string/nav_11_ZOB_Senefelderstr"
+                android:icon="@drawable/line_11"/>
+            <item
+                android:id="@+id/nav_11_Senefelderstr_ZOB"
+                android:title="@string/nav_11_Senefelderstr_ZOB"
+                android:icon="@drawable/line_11"/>
+            <item
+                android:id="@+id/nav_K1_Lueftlberg_Mariahilf"
+                android:title="@string/nav_K1_Lueftlberg_Mariahilf"
+                android:icon="@drawable/line_k_1"/>
+            <item
+                android:id="@+id/nav_K1_Mariahilf_Lueftlberg"
+                android:title="@string/nav_K1_Mariahilf_Lueftlberg"
+                android:icon="@drawable/line_k_1"/>
+            <item
+                android:id="@+id/nav_K2_Sieglberg_Muehltal"
+                android:title="@string/nav_K2_Sieglberg_Muehltal"
+                android:icon="@drawable/line_k_2"/>
+            <item
+                android:id="@+id/nav_K2_Muehltal_Sieglberg"
+                android:title="@string/nav_K2_Muehltal_Sieglberg"
+                android:icon="@drawable/line_k_2"/>
+            <item
+                android:id="@+id/nav_K3_Klinikum_Hoegl"
+                android:title="@string/nav_K3_Klinikum_Hoegl"
+                android:icon="@drawable/line_k_3"/>
+            <item
+                android:id="@+id/nav_K3_Hoegl_Klinikum"
+                android:title="@string/nav_K3_Hoegl_Klinikum"
+                android:icon="@drawable/line_k_3"/>
+            <item
+                android:id="@+id/nav_K4_ZOB_Sperrwies"
+                android:title="@string/nav_K4_ZOB_Sperrwies"
+                android:icon="@drawable/line_k_4"/>
+            <item
+                android:id="@+id/nav_K4_Sperrwies_ZOB"
+                android:title="@string/nav_K4_Sperrwies_ZOB"
+                android:icon="@drawable/line_k_4"/>
+            <item
+                android:id="@+id/nav_78_ZOB_Schalding"
+                android:title="@string/nav_78_ZOB_Schalding"
+                android:icon="@drawable/line_78"/>
+            <item
+                android:id="@+id/nav_78_Schalding_ZOB"
+                android:title="@string/nav_78_Schalding_ZOB"
+                android:icon="@drawable/line_78"/>
+            <item
+                android:id="@+id/nav_79_ZOB_Eichendorffstr"
+                android:title="@string/nav_79_ZOB_Eichendorffstr"
+                android:icon="@drawable/line_79"/>
+            <item
+                android:id="@+id/nav_79_Eichendorffstr_ZOB"
+                android:title="@string/nav_79_Eichendorffstr_ZOB"
+                android:icon="@drawable/line_79"/>
+            <item
+                android:id="@+id/nav_CB_Bahnhofstr_Roemerplatz"
+                android:title="@string/nav_CB_Bahnhofstr_Roemerplatz"
+                android:icon="@drawable/line_c_b"/>
+            <item
+                android:id="@+id/nav_CB_Roemerplatz_Bahnhofstr"
+                android:title="@string/nav_CB_Roemerplatz_Bahnhofstr"
+                android:icon="@drawable/line_c_b"/>
+
+
 
 
 
