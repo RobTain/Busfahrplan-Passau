@@ -1,8 +1,9 @@
 *.iml
-.gradle
-/local.properties
-/.idea/workspace.xml
-/.idea/libraries
-.DS_Store
-/build
-/captures
+Busfahrplan Passau/.gradle
+Busfahrplan Passau/local.properties
+Busfahrplan Passau/.idea/workspace.xml
+Busfahrplan Passau/.idea/libraries
+Busfahrplan Passau/.DS_Store
+Busfahrplan Passau/build
+Busfahrplan Passau/captures
+Busfahrplan Passau/.idea/.name
