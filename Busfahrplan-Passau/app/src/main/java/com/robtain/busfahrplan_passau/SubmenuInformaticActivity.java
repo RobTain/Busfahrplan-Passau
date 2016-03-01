@@ -188,5 +188,7 @@ public class SubmenuInformaticActivity extends AppCompatActivity {
             startActivity(menu);
         }
     }
+
+
 }
 

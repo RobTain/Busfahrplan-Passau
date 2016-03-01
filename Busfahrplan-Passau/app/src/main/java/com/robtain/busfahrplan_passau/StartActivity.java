@@ -41,7 +41,7 @@ public class StartActivity extends AppCompatActivity {
                     @Override
                     public boolean onNavigationItemSelected(MenuItem item) {
                         Tools tools = new Tools();
-
+                        //test
                         Intent i = new Intent(StartActivity.this, tools
                                 .getNavMenu(item));
                         openView(i);
