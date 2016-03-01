@@ -20,11 +20,6 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".ContactActivity"
-                  android:label="Kontakt"
-                  android:windowSoftInputMode="stateHidden"
-                  android:theme="@style/AppTheme.NoActionBar"
-                  android:screenOrientation="portrait"/>
         <activity android:name=".LexiconActivity"
                   android:label="Lexikon"
                   android:windowSoftInputMode="stateHidden"
@@ -45,6 +40,7 @@
                   android:theme="@style/AppTheme.NoActionBar"
                   android:screenOrientation="portrait"/>
         <activity android:name=".SubmenuActivity"
+                  android:label="test"
                   android:windowSoftInputMode="stateHidden"
                   android:theme="@style/AppTheme.NoActionBar"
                   android:screenOrientation="portrait"/>

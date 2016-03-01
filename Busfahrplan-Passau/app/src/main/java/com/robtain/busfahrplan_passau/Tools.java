@@ -99,10 +99,10 @@ public class Tools {
                     codeword = "78_S_Z";
                     return SubmenuActivity.class;
                 case R.id.nav_79_ZOB_Eichendorffstr:
-                    codeword = "78_Z_E";
+                    codeword = "79_Z_E";
                     return SubmenuActivity.class;
                 case R.id.nav_79_Eichendorffstr_ZOB:
-                    codeword = "78_E_Z";
+                    codeword = "79_E_Z";
                     return SubmenuActivity.class;
                 case R.id.nav_CB_Bahnhofstr_Roemerplatz:
                     codeword = "CB_B_R";
@@ -121,6 +121,120 @@ public class Tools {
      */
     public String getCodeword() {
         return codeword;
+    }
+
+    /**
+     * transforms a keyword into a displayable title
+     * @param s keyword
+     * @return title
+     */
+    public String transformKeywordIntoTitle(String s) {
+        String title = null;
+            switch (s) {
+                case "1_2":
+                   title = "Linie 1/2: Lindau/Ziegelreuth - ZOB - " +
+                           "Kohlbruck/Erlebnisbad PEB";
+                    break;
+                case "1":
+                    title = "Linie 1: Kohlbruck/Erlebnisbad PEB - ZOB - Lindau";
+                    break;
+                case "2":
+                    title = "Linie 2: Kohlbruck/Erlebnisbad PEB - ZOB - " +
+                            "Zieglreuth";
+                  break;
+                case "3_4":
+                    title = "Linie 3/4: Bäckerholz/Hochstein - ZOB - Achleiten";
+                    break;
+                case "3":
+                    title = "Linie 3: Achleiten - ZOB - Bäckerholz";
+                    break;
+                case "4":
+                    title = "Linie 4: Achleiten - ZOB - Hochstein";
+                    break;
+                case "5_6_K_P":
+                    title = "Linie 5/6: Kohlbruck - ZOB - " +
+                            "Patriching/Schalding" +
+                            " " +
+                            "l.d.D.";
+                    break;
+                case "5_6_P_K":
+                    title = "Linie 5/6: Patriching/Schalding l.d.D. - ZOB - " +
+                            "Kohlbruck";
+                    break;
+                case "7_E_R":
+                    title = "Linie 7: Eichendorffstr. - ZOB - Ries";
+                    break;
+                case "7_R_E":
+                    title = "Linie 7: Ries - ZOB - Eichendorffstr.";
+                   break;
+                case "8_9_Kohl_Koenig":
+                    title = "Linie 8/9: Kohlbruck/Erlebnisbad PEB - ZOB - " +
+                            "Königschalding";
+                   break;
+                case "8_9_Koenig_Kohl":
+                    title = "Linie 8/9: Königschalding - ZOB - " +
+                            "Kohlbruck/Erlebnisbad PEB";
+                    break;
+                case "10_Z_S":
+                    title = "Linie 10: ZOB - Schalding r.d.D.";
+                    break;
+                case "10_S_Z":
+                    title = "Linie 10: Schalding r.d.D. - ZOB";
+                    break;
+                case "11_Z_S":
+                    title = "Linie 11: ZOB - Senefelderstr.";
+                    break;
+                case "11_S_Z":
+                    title = "Linie 11: Senefelderstr. - ZOB";
+                    break;
+                case "K1_L_M":
+                    title = "Linie K1: Lüftlberg - ZOB - " +
+                            "Mariahilf-Grenzstation";
+                    break;
+                case "K1_M_L":
+                    title = "Linie K1: Mariahilf-Grenzstation - ZOB - " +
+                            "Lüftlberg";
+                    break;
+                case "K2_S_M":
+                    title = "Linie K2: Sieglberg/Sieglgut - ZOB - " +
+                            "Mühltal/Lindental";
+                    break;
+                case "K2_M_S":
+                    title = "Linie K2: Mühltal/Lindental - ZOB - " +
+                            "Sieglberg/Sieglgut";
+                    break;
+                case "K3_K_H":
+                    title = "Linie K3: Klinikum - ZOB - Am Högl/Sulzsteg";
+                    break;
+                case "K3_H_K":
+                    title = "Linie K3: Am Högl/Sulzsteg - ZOB - Klinikum";
+                    break;
+                case "K4_Z_S":
+                    title = "Linie K4: ZOB - Sperrwies";
+                    break;
+                case "K4_S_Z":
+                    title = "Linie K4: Sperrwies - ZOB";
+                    break;
+                case "78_Z_S":
+                    title = "Linie 78: ZOB - Schalding r.d.D.";
+                    break;
+                case "78_S_Z":
+                    title = "Linie 78: Schalding r.d.D. - ZOB";
+                    break;
+                case "79_Z_E":
+                    title = "Linie 79: ZOB - Eichendorffstr.";
+                    break;
+                case "79_E_Z":
+                    title = "Linie 79: Eichendorffstr. - ZOB";
+                    break;
+                case "CB_B_R":
+                    title = "Citybus: Parkhaus Bahnhofstr. - ZOB - Römerplatz";
+                    break;
+                case "CB_R_B":
+                    title = "Citybus: Römerplatz - ZOB - Parkhaus Bahnhofstr.";
+                    break;
+            }
+        return title;
     }
 
 }

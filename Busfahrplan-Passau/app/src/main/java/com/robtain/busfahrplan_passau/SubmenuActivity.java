@@ -21,14 +21,20 @@ public class SubmenuActivity extends AppCompatActivity {
     ListView listView;
     LinkedList sublist;
     String keyword;
+    Tools tools;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.submenu);
+        tools = new Tools();
+
         //get keyword
         Intent i = getIntent();
         keyword = i.getStringExtra("keyword");
+
+        //set title
+        setTitle(tools.transformKeywordIntoTitle(keyword));
 
 
 

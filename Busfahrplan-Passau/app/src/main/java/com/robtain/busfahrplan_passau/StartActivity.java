@@ -124,7 +124,7 @@ public class StartActivity extends AppCompatActivity {
 
 
     /**
-     * Back key will end application 
+     * Back key will end application
      */
     @Override
     public void onBackPressed() {

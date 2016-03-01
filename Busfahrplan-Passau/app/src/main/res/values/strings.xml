@@ -24,7 +24,7 @@
     <string name="nav_7_Eichendorffstr_Ries">Eichendorffstr. - ZOB -
     Ries</string>
     <string name="nav_7_Ries_Eichendorffstr">Ries - ZOB -
-        Eichendorfstr.</string>
+        Eichendorffstr.</string>
     <string name="nav_8_9_Kohlbruck_Koenigschalding">Kohlbruck
         /Erlebnisbad PEB - ZOB - Königschalding</string>
     <string name="nav_8_9_Koenigschalding_Kohlbruck">Königschalding
@@ -54,6 +54,6 @@
     <string name="nav_CB_Bahnhofstr_Roemerplatz">Parkhaus Bahnhofstr. - ZOB
     - Römerplatz</string>
     <string name="nav_CB_Roemerplatz_Bahnhofstr">Römerplatz - ZOB -
-        Parkhaus Bahnhofstr</string>
+        Parkhaus Bahnhofstr.</string>
 
 </resources>
