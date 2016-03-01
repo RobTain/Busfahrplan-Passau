@@ -51,50 +51,7 @@ public class LexiconActivity extends AppCompatActivity {
                         int id = item.getItemId();
                         Intent i;
 
-                        if (id == R.id.mathematicsNavMenu) {
-                            i = new Intent(LexiconActivity.this, LexiconActivity.class);
-                            openView(i);
 
-                        } else if (id == R.id.physicsNavMenu) {
-                            i = new Intent(LexiconActivity.this, SubmenuPhysicActivity.class);
-                            openView(i);
-
-
-                        } else if (id == R.id.computerscienceNavMenu) {
-                            i = new Intent(LexiconActivity.this, SubmenuInformaticActivity.class);
-                            openView(i);
-
-
-                        } else if (id == R.id.chemistryNavMenu) {
-                            i = new Intent(LexiconActivity.this, SubmenuChemistryActivity.class);
-                            openView(i);
-
-
-                        } else if (id == R.id.biologyNavMenu) {
-                            i = new Intent(LexiconActivity.this, SubmenuBiologyActivity.class);
-                            openView(i);
-
-                        } else if (id == R.id.accountingNavMenu) {
-                            i = new Intent(LexiconActivity.this, SubmenuAccountingActivity.class);
-                            openView(i);
-
-                        } else if (id == R.id.searchNavMenu) {
-                            i = new Intent(LexiconActivity.this, SearchActivity.class);
-                            openView(i);
-
-                        } else if (id == R.id.lexiconNavMenu) {
-                            i = new Intent(LexiconActivity.this, LexiconActivity.class);
-                            openView(i);
-                        } else if (id == R.id.contactNavMenu) {
-                            i = new Intent(LexiconActivity.this, ContactActivity.class);
-                            openView(i);
-                        } else if (id == R.id.rateNavMenu) {
-                            i = new Intent(LexiconActivity.this, RateAppActivity.class);
-                            openView(i);
-                        } else if (id == R.id.buyPremiumNavMenu) {
-                            i = new Intent(LexiconActivity.this, BuyPremiumActivity.class);
-                            openView(i);
-                        }
 
                         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
                         drawer.closeDrawer(GravityCompat.START);

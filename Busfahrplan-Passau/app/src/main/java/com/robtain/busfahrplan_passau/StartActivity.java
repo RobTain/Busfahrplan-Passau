@@ -43,7 +43,9 @@ public class StartActivity extends AppCompatActivity {
                         Tools tools = new Tools();
                         //test
                         Intent i = new Intent(StartActivity.this, tools
-                                .getNavMenu(item));
+                                .selectPath(item));
+                        String keyword = tools.getCodeword();
+                        i.putExtra("keyword", keyword);
                         openView(i);
                         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
                         drawer.closeDrawer(GravityCompat.START);
@@ -122,7 +124,7 @@ public class StartActivity extends AppCompatActivity {
 
 
     /**
-     * functional back key
+     * Back key will end application 
      */
     @Override
     public void onBackPressed() {

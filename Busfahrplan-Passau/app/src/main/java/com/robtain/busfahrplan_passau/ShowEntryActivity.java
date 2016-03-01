@@ -48,50 +48,8 @@ public class ShowEntryActivity extends AppCompatActivity {
                         int id = item.getItemId();
                         Intent i;
 
-                        if (id == R.id.mathematicsNavMenu) {
-                            i = new Intent(ShowEntryActivity.this, SubmenuMathActivity.class);
-                            openView(i);
-
-                        } else if (id == R.id.physicsNavMenu) {
-                            i = new Intent(ShowEntryActivity.this, SubmenuPhysicActivity.class);
-                            openView(i);
-
-                        } else if (id == R.id.computerscienceNavMenu) {
-                            i = new Intent(ShowEntryActivity.this, SubmenuInformaticActivity.class);
-                            openView(i);
-
-                        } else if (id == R.id.chemistryNavMenu) {
-                            i = new Intent(ShowEntryActivity.this, SubmenuChemistryActivity.class);
-                            openView(i);
 
 
-                        } else if (id == R.id.biologyNavMenu) {
-                            i = new Intent(ShowEntryActivity.this, SubmenuBiologyActivity.class);
-                            openView(i);
-
-
-                        } else if (id == R.id.accountingNavMenu) {
-                            i = new Intent(ShowEntryActivity.this, SubmenuAccountingActivity.class);
-                            openView(i);
-
-
-                        } else if (id == R.id.searchNavMenu) {
-                            i = new Intent(ShowEntryActivity.this, SearchActivity.class);
-                            openView(i);
-
-                        } else if (id == R.id.lexiconNavMenu) {
-                            i = new Intent(ShowEntryActivity.this, LexiconActivity.class);
-                            openView(i);
-                        } else if (id == R.id.contactNavMenu) {
-                            i = new Intent(ShowEntryActivity.this, ContactActivity.class);
-                            openView(i);
-                        } else if (id == R.id.rateNavMenu) {
-                            i = new Intent(ShowEntryActivity.this, RateAppActivity.class);
-                            openView(i);
-                        } else if (id == R.id.buyPremiumNavMenu) {
-                            i = new Intent(ShowEntryActivity.this, BuyPremiumActivity.class);
-                            openView(i);
-                        }
 
                         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
                         drawer.closeDrawer(GravityCompat.START);
