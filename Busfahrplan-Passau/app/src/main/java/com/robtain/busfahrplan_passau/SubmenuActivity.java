@@ -10,24 +10,35 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
 import android.view.MenuItem;
+import android.view.View;
+import android.widget.AdapterView;
+import android.widget.ArrayAdapter;
 import android.widget.ListView;
 
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  * Created by RobTain on 01.03.2016.
  */
 public class SubmenuActivity extends AppCompatActivity {
     ListView listView;
-    LinkedList sublist;
+    LinkedList busStations;
     String keyword;
+    String busStop;
     Tools tools;
+    BusLine busLine;
+    BusStation bs;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.submenu);
         tools = new Tools();
+        busLine = new BusLine();
+
 
         //get keyword
         Intent i = getIntent();
@@ -35,6 +46,10 @@ public class SubmenuActivity extends AppCompatActivity {
 
         //set title
         setTitle(tools.transformKeywordIntoTitle(keyword));
+        busStations = busLine.getBusLine(keyword);
+        Log.e(keyword, keyword);
+
+
 
 
 
@@ -74,63 +89,57 @@ public class SubmenuActivity extends AppCompatActivity {
                 });
 
 
-//        // Get ListView object from xml
-//        listView = (ListView) findViewById(R.id.listsubmenu);
-//
-//        // Defined Array values to show in ListView
-//        Lexicon lexicon = new Lexicon();
-//        sublist = lexicon.getSublist(Topic.Informatic);
-//        LexiconEntry entry;
-//
-//        String[] values = new String[sublist.size()];
-//
-//        for (int i = 0; i < values.length; i++) {
-//            entry = (LexiconEntry) sublist.get(i);
-//            values[i] = entry.getTitle();
-//        }
-//
-//
-//        // Define a new Adapter
-//        // First parameter - Context
-//        // Second parameter - Layout for the row
-//        // Third parameter - ID of the TextView to which the data is written
-//        // Forth - the Array of data
-//
-//        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, R.layout.submenu_style,
-//                android.R.id.text1, values);
-//
-//
-//        // Assign adapter to ListView
-//        listView.setAdapter(adapter);
-//
-//        // ListView Item Click Listener
-//        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-//
-//            @Override
-//            public void onItemClick(AdapterView<?> parent, View view,
-//                                    int position, long id) {
-//
-//                String itemValue = (String) listView.getItemAtPosition(position);
-//                Object o = new Object();
-//                LexiconEntry lexiconEntry;
-//                for (int i = 0; i < sublist.size(); i++) {
-//                    o = sublist.get(i);
-//                    lexiconEntry = (LexiconEntry) o;
-//                    if (lexiconEntry.getTitle().equals(itemValue)) {
-//                        String[] keywords = lexiconEntry.getKeywords();
-//                        itemValue = keywords[0];
-//                        break;
-//                    }
-//                }
-//                setSearchWord(itemValue);
-//                finish();
-//               // Intent menu = new Intent(SubmenuAccountingActivity.this,
-//                //     ShowEntryActivity.class);
-//                overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
-//              //  startActivity(menu);
-//            }
-//
-//        });
+        // Get ListView object from xml
+        listView = (ListView) findViewById(R.id.listsubmenu);
+        // Define (title) values to show in ListView
+        String[] values = new String[busStations.size()];
+
+        for (int j = 0; j < values.length; j++) {
+            bs = (BusStation) busStations.get(j);
+            values[j] = bs.getTitle();
+        }
+
+        // Define a new Adapter
+        // First parameter - Context
+        // Second parameter - Layout for the row
+        // Third parameter - ID of the TextView to which the data is written
+        // Forth - the Array of data
+
+        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
+                R.layout.submenu_style, android.R.id.text1, values);
+
+
+       // Assign adapter to ListView
+       listView.setAdapter(adapter);
+
+        // ListView Item Click Listener
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+
+
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view,
+                                    int position, long id) {
+
+                String itemValue = (String) listView.getItemAtPosition(position);
+                Object o = new Object();
+                for (int i = 0; i < busStations.size(); i++) {
+                    o = busStations.get(i);
+                    bs = (BusStation) o;
+                    if (bs.getTitle().equals(itemValue)) {
+                        busStop = bs.getTitle();
+                        break;
+                    }
+                }
+
+                finish();
+                Intent i = new Intent(SubmenuActivity.this,
+                        ShowEntryActivity.class);
+                i.putExtra("keyword", keyword);
+                i.putExtra("busstop", busStop);
+                startActivity(i);
+            }
+
+        });
     }
 
 

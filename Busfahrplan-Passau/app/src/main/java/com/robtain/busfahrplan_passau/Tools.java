@@ -3,11 +3,14 @@ package com.robtain.busfahrplan_passau;
 import android.content.Intent;
 import android.view.MenuItem;
 
+import java.util.LinkedList;
+
 /**
  * provides methodes to reduce code duplication or set general settings
  */
 public class Tools {
     private String codeword;
+    private BusStation busStation;
 
     /**
      * selects a class and set a keyword (keyword is a identifier for the
@@ -237,4 +240,161 @@ public class Tools {
         return title;
     }
 
+
+    public LinkedList findBusLine(String s) {
+        String title = null;
+        LinkedList<BusStation> list = new LinkedList<>();
+        switch (s) {
+            case "1_2":
+                busStation = new BusStation("Zahnradfabrik Werk 1");
+                list.add(busStation);
+                busStation = new BusStation("Lindau");
+                list.add(busStation);
+                busStation = new BusStation("Firmiangut");
+                list.add(busStation);
+                busStation = new BusStation("Abteistraße");
+                list.add(busStation);
+                busStation = new BusStation("Englmeierstraße");
+                list.add(busStation);
+                busStation = new BusStation("Waldschmidtstraße");
+                list.add(busStation);
+                busStation = new BusStation("Am Hochpegel");
+                list.add(busStation);
+                busStation = new BusStation("Prinz-Eugen-Straße");
+                list.add(busStation);
+                busStation = new BusStation("Josef-Wenzl-Straße");
+                list.add(busStation);
+                busStation = new BusStation("Christdobl");
+                list.add(busStation);
+                busStation = new BusStation("Ilzbrücke");
+                list.add(busStation);
+                busStation = new BusStation("Römerplatz");
+                list.add(busStation);
+                busStation = new BusStation("Rathaus");
+                list.add(busStation);
+                busStation = new BusStation("Nagelschmiedgasse");
+                list.add(busStation);
+                busStation = new BusStation("ZOB Bussteig 1C");
+                list.add(busStation);
+                busStation = new BusStation("Leopoldstraße");
+                list.add(busStation);
+                busStation = new BusStation("Giselastraße");
+                list.add(busStation);
+                busStation = new BusStation("St. Anton");
+                list.add(busStation);
+                busStation = new BusStation("Schulzentrum/AOK");
+                list.add(busStation);
+                busStation = new BusStation("Kainzenweg");
+                list.add(busStation);
+                busStation = new BusStation("Schönleitnerweg");
+                list.add(busStation);
+                busStation = new BusStation("Breslauer Straße");
+                list.add(busStation);
+                busStation = new BusStation("Dr. Emil-Brichta-Str.");
+                list.add(busStation);
+                busStation = new BusStation("Kohlbruck/Erlebnisbad PEB");
+                list.add(busStation);
+
+                break;
+            case "1":
+                title = "Linie 1: Kohlbruck/Erlebnisbad PEB - ZOB - Lindau";
+                break;
+            case "2":
+                title = "Linie 2: Kohlbruck/Erlebnisbad PEB - ZOB - " +
+                        "Zieglreuth";
+                break;
+            case "3_4":
+                title = "Linie 3/4: Bäckerholz/Hochstein - ZOB - Achleiten";
+                break;
+            case "3":
+                title = "Linie 3: Achleiten - ZOB - Bäckerholz";
+                break;
+            case "4":
+                title = "Linie 4: Achleiten - ZOB - Hochstein";
+                break;
+            case "5_6_K_P":
+                title = "Linie 5/6: Kohlbruck - ZOB - " +
+                        "Patriching/Schalding" +
+                        " " +
+                        "l.d.D.";
+                break;
+            case "5_6_P_K":
+                title = "Linie 5/6: Patriching/Schalding l.d.D. - ZOB - " +
+                        "Kohlbruck";
+                break;
+            case "7_E_R":
+                title = "Linie 7: Eichendorffstr. - ZOB - Ries";
+                break;
+            case "7_R_E":
+                title = "Linie 7: Ries - ZOB - Eichendorffstr.";
+                break;
+            case "8_9_Kohl_Koenig":
+                title = "Linie 8/9: Kohlbruck/Erlebnisbad PEB - ZOB - " +
+                        "Königschalding";
+                break;
+            case "8_9_Koenig_Kohl":
+                title = "Linie 8/9: Königschalding - ZOB - " +
+                        "Kohlbruck/Erlebnisbad PEB";
+                break;
+            case "10_Z_S":
+                title = "Linie 10: ZOB - Schalding r.d.D.";
+                break;
+            case "10_S_Z":
+                title = "Linie 10: Schalding r.d.D. - ZOB";
+                break;
+            case "11_Z_S":
+                title = "Linie 11: ZOB - Senefelderstr.";
+                break;
+            case "11_S_Z":
+                title = "Linie 11: Senefelderstr. - ZOB";
+                break;
+            case "K1_L_M":
+                title = "Linie K1: Lüftlberg - ZOB - " +
+                        "Mariahilf-Grenzstation";
+                break;
+            case "K1_M_L":
+                title = "Linie K1: Mariahilf-Grenzstation - ZOB - " +
+                        "Lüftlberg";
+                break;
+            case "K2_S_M":
+                title = "Linie K2: Sieglberg/Sieglgut - ZOB - " +
+                        "Mühltal/Lindental";
+                break;
+            case "K2_M_S":
+                title = "Linie K2: Mühltal/Lindental - ZOB - " +
+                        "Sieglberg/Sieglgut";
+                break;
+            case "K3_K_H":
+                title = "Linie K3: Klinikum - ZOB - Am Högl/Sulzsteg";
+                break;
+            case "K3_H_K":
+                title = "Linie K3: Am Högl/Sulzsteg - ZOB - Klinikum";
+                break;
+            case "K4_Z_S":
+                title = "Linie K4: ZOB - Sperrwies";
+                break;
+            case "K4_S_Z":
+                title = "Linie K4: Sperrwies - ZOB";
+                break;
+            case "78_Z_S":
+                title = "Linie 78: ZOB - Schalding r.d.D.";
+                break;
+            case "78_S_Z":
+                title = "Linie 78: Schalding r.d.D. - ZOB";
+                break;
+            case "79_Z_E":
+                title = "Linie 79: ZOB - Eichendorffstr.";
+                break;
+            case "79_E_Z":
+                title = "Linie 79: Eichendorffstr. - ZOB";
+                break;
+            case "CB_B_R":
+                title = "Citybus: Parkhaus Bahnhofstr. - ZOB - Römerplatz";
+                break;
+            case "CB_R_B":
+                title = "Citybus: Römerplatz - ZOB - Parkhaus Bahnhofstr.";
+                break;
+        }
+        return list;
+    }
 }

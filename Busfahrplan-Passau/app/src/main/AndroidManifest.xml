@@ -20,18 +20,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name=".LexiconActivity"
-                  android:label="Lexikon"
-                  android:windowSoftInputMode="stateHidden"
-                  android:theme="@style/AppTheme.NoActionBar"
-                  android:screenOrientation="portrait"/>
         <activity android:name=".RateAppActivity"
                   android:label="App bewerten"
-                  android:windowSoftInputMode="stateHidden"
-                  android:theme="@style/AppTheme.NoActionBar"
-                  android:screenOrientation="portrait"/>
-        <activity android:name=".SearchActivity"
-                  android:label="Formel suchen"
                   android:windowSoftInputMode="stateHidden"
                   android:theme="@style/AppTheme.NoActionBar"
                   android:screenOrientation="portrait"/>

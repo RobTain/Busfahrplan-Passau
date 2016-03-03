@@ -63,63 +63,7 @@ public class StartActivity extends AppCompatActivity {
                                 .slide_out);
                         startActivity(i);
                     }
-
-
                 });
-
-        final EditText editText = (EditText) findViewById(R.id.inputStartView);
-        editText.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                editText.setText("");
-                editText.setTypeface(null, Typeface.NORMAL);
-            }
-        });
-
-        search = (Button) findViewById(R.id.searchButtonStartView);
-        search.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                EditText mText = (EditText) findViewById(R.id.inputStartView);
-                String word = mText.getText().toString();
-
-                if (word.length() == 0) {
-                    //create Alert for empty text
-                    sendErrorMessage();
-                } else {
-                    setSearchWord(word);
-                    finish();
-                    Intent menu = new Intent(StartActivity.this, ShowEntryActivity.class);
-                    overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
-                    startActivity(menu);
-                }
-            }
-        });
-    }
-
-    /**
-     * creating error message (empty request)
-     */
-    private void sendErrorMessage() {
-        AlertDialog.Builder messageMissingInput = new AlertDialog.Builder(this);
-        messageMissingInput.setTitle("Fehlende Eingabe...");
-        messageMissingInput.setMessage("Bitte geben Sie einen Text ein, bevor Sie fortfahren!");
-        messageMissingInput.setNeutralButton("OK", null);
-        messageMissingInput.setIcon(R.drawable.warning);
-        messageMissingInput.show();
-    }
-
-    /**
-     * setting search word
-     *
-     * @param word entered input
-     */
-    private void setSearchWord(String word) {
-        word = word.toLowerCase().trim();
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        SharedPreferences.Editor editor = preferences.edit();
-        editor.putString("searchword", word);
-        editor.apply();
     }
 
 

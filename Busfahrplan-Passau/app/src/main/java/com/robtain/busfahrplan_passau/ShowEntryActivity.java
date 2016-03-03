@@ -69,32 +69,30 @@ public class ShowEntryActivity extends AppCompatActivity {
 
                 });
 
-        SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(this);
-        searchword = preferences.getString("searchword", searchword);
-        searchLexicon(searchword);
+      
     }
 
     /**
      * search lexicon for the request
      *
      * @param searchword entered input
-     */
-    private void searchLexicon(String searchword) {
-        Lexicon lexicon = new Lexicon();
-        LexiconEntry lexiconEntry = lexicon.findEntry(searchword);
-        if (lexiconEntry == null) {
-            this.title = "Kein Erfolg!";
-            this.description = null;
-        } else if (lexiconEntry.isPremium()) {
-            this.title = "Standard Version";
-            this.description = "Zum Betrachten der Formel kaufen Sie sich Bitte die Premiumversion";
-            //ToDO Bild von PremiumVersion einfÃ¼gen
-        } else {
-            this.title = lexiconEntry.getTitle();
-            this.description = lexiconEntry.getDescription();
-        }
-        setView();
-    }
+//     */
+//    private void searchLexicon(String searchword) {
+//        Lexicon lexicon = new Lexicon();
+//        LexiconEntry lexiconEntry = lexicon.findEntry(searchword);
+//        if (lexiconEntry == null) {
+//            this.title = "Kein Erfolg!";
+//            this.description = null;
+//        } else if (lexiconEntry.isPremium()) {
+//            this.title = "Standard Version";
+//            this.description = "Zum Betrachten der Formel kaufen Sie sich Bitte die Premiumversion";
+//            //ToDO Bild von PremiumVersion einfÃ¼gen
+//        } else {
+//            this.title = lexiconEntry.getTitle();
+//            this.description = lexiconEntry.getDescription();
+//        }
+//        setView();
+//    }
 
     /**
      * creating the view with the search result
@@ -121,7 +119,7 @@ public class ShowEntryActivity extends AppCompatActivity {
             drawer.closeDrawer(GravityCompat.START);
         } else {
             finish();
-            Intent menu = new Intent(ShowEntryActivity.this, SearchActivity.class);
+            Intent menu = new Intent(ShowEntryActivity.this, SubmenuActivity.class);
             overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
             startActivity(menu);
         }
