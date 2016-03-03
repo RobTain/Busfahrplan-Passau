@@ -69,7 +69,7 @@ public class ShowEntryActivity extends AppCompatActivity {
 
                 });
 
-      
+
     }
 
     /**

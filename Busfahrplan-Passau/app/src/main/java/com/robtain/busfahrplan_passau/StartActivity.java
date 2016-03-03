@@ -64,6 +64,8 @@ public class StartActivity extends AppCompatActivity {
                         startActivity(i);
                     }
                 });
+
+        //TODO set picture all Lines (Linienplan_2013_A3.pdf)
     }
 
 

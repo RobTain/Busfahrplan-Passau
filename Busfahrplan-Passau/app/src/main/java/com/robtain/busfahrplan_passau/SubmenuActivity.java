@@ -47,11 +47,6 @@ public class SubmenuActivity extends AppCompatActivity {
         //set title
         setTitle(tools.transformKeywordIntoTitle(keyword));
         busStations = busLine.getBusLine(keyword);
-        Log.e(keyword, keyword);
-
-
-
-
 
         //set NavMenu
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
