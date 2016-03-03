@@ -1,6 +1,7 @@
 package com.robtain.busfahrplan_passau;
 
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -36,6 +37,12 @@ public class SubmenuActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.submenu);
+
+        //set color statusbar
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.black));
+        }
+
         tools = new Tools();
         busLine = new BusLine();
 
@@ -63,9 +70,13 @@ public class SubmenuActivity extends AppCompatActivity {
                 new NavigationView.OnNavigationItemSelectedListener() {
                     @Override
                     public boolean onNavigationItemSelected(MenuItem item) {
-                        int id = item.getItemId();
-                        Intent i;
-
+                        Tools tools = new Tools();
+                        //test
+                        Intent i = new Intent(SubmenuActivity.this, tools
+                                .selectPath(item));
+                        String keyword = tools.getCodeword();
+                        i.putExtra("keyword", keyword);
+                        openView(i);
                         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
                         drawer.closeDrawer(GravityCompat.START);
                         return true;
