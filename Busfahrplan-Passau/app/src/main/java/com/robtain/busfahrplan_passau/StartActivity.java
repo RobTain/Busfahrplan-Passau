@@ -1,7 +1,9 @@
 package com.robtain.busfahrplan_passau;
 
 
+import android.annotation.TargetApi;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -11,9 +13,15 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
 import android.view.MenuItem;
+import android.view.MotionEvent;
+import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
+import android.widget.ImageView;
 
 
 public class StartActivity extends AppCompatActivity {
+
 
 
 
@@ -21,6 +29,11 @@ public class StartActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.start);
+
+        //set color statusbar
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.black));
+        }
 
         // NavMenu
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -62,6 +75,26 @@ public class StartActivity extends AppCompatActivity {
                     }
                 });
 
+        final ImageView lineplan = (ImageView) findViewById(R.id.lineplan);
+        final Animation zoomin = AnimationUtils.loadAnimation(this, R.anim.zoomin);
+        final Animation zoomout = AnimationUtils.loadAnimation(this, R.anim.zoomout);
+        lineplan.setAnimation(zoomin);
+        lineplan.setAnimation(zoomout);
+    //TODO better zoom in and out (set pivot!!!)
+        lineplan.setOnTouchListener(new View.OnTouchListener() {
+            @Override
+            public boolean onTouch(View v, MotionEvent event) {
+                switch (event.getAction() & MotionEvent.ACTION_MASK) {
+                    case MotionEvent.ACTION_UP:
+                        v.startAnimation(zoomout);
+                        break;
+                    case MotionEvent.ACTION_DOWN:
+                        v.startAnimation(zoomin);
+                        break;
+                }
+                return true;
+            }
+        });
     }
 
 

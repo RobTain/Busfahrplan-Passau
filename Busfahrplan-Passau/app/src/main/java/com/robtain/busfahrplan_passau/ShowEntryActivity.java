@@ -1,9 +1,11 @@
 package com.robtain.busfahrplan_passau;
 
+import android.annotation.TargetApi;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
+import android.os.Build;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
 import android.support.design.widget.NavigationView;
@@ -24,11 +26,16 @@ public class ShowEntryActivity extends AppCompatActivity {
     private String description;
 
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.searchresult);
 
+        //set color statusbar
+        if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+            getWindow().setStatusBarColor(getResources().getColor(R.color.black));
+        }
 
         // NavMenu
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);

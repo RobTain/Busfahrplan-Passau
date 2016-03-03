@@ -4,9 +4,9 @@
           android:id="@android:id/text1"
           android:layout_width="match_parent"
           android:layout_height="wrap_content"
-          android:textAppearance="?android:attr/textAppearanceListItemSmall"
-          android:gravity="center_vertical"
+          android:textAppearance="?android:attr/textAppearanceListItem"
+          android:gravity="center"
           android:textSize="24sp"
-          android:textColor="@color/colorSubMenus"
+          android:textColor="@color/black"
           android:textStyle="italic"
           android:minHeight="?android:attr/listPreferredItemHeightLarge" />

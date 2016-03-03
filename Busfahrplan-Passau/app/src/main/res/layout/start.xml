@@ -33,34 +33,15 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:gravity="center"
-            android:orientation="vertical">
+            android:orientation="vertical"
+            android:layout_marginTop="?android:attr/actionBarSize">
 
-            <EditText
-                android:layout_width="fill_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/start_search_input_field"
-                android:textStyle="italic"
-                android:textColor="#3d3535"
-                android:layout_centerInParent="true"
-                android:layout_centerHorizontal="true"
-                android:layout_centerVertical="true"
-                android:id="@+id/inputStartView"
-                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/lineplan"
 
-
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/search"
-                android:layout_centerInParent="true"
-                android:layout_centerHorizontal="true"
-                android:layout_below="@+id/inputStartView"
-                android:id="@+id/searchButtonStartView"
-                android:layout_marginTop="@dimen/activity_vertical_margin"
-                android:layout_gravity="center_horizontal"/>
-
-
+                android:background="@drawable/line_plan"/>
 
         </LinearLayout>
 
