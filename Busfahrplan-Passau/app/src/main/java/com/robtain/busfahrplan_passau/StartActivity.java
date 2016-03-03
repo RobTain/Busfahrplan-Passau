@@ -1,24 +1,21 @@
 package com.robtain.busfahrplan_passau;
 
-import android.app.AlertDialog;
+
 import android.content.Intent;
-import android.content.SharedPreferences;
-import android.graphics.Typeface;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+
 import android.view.MenuItem;
-import android.view.View;
-import android.widget.Button;
-import android.widget.EditText;
+
 
 public class StartActivity extends AppCompatActivity {
-    private Button search;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -65,7 +62,6 @@ public class StartActivity extends AppCompatActivity {
                     }
                 });
 
-        //TODO set picture all Lines (Linienplan_2013_A3.pdf)
     }
 
 
