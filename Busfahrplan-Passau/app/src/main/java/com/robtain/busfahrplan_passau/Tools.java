@@ -836,421 +836,505 @@ public class Tools {
             case "7_E_R":
                 busStation = new BusStation("Anzengruberstraße", "7_E_R", "1");
                 list.add(busStation);
-                busStation = new BusStation("Auerspergstraße", "7_E_R", "1");
+                busStation = new BusStation("Auerspergstraße", "7_E_R", "2");
                 list.add(busStation);
-                busStation = new BusStation("Aeußere Spitalhofstraße", "7_E_R", "1");
+                busStation = new BusStation("Aeußere Spitalhofstraße",
+                        "7_E_R", "3");
                 list.add(busStation);
-                busStation = new BusStation("Bockhofweg", "7_E_R", "1");
+                busStation = new BusStation("Bockhofweg", "7_E_R", "4");
                 list.add(busStation);
-                busStation = new BusStation("Danziger Straße", "7_E_R", "1");
+                busStation = new BusStation("Danziger Straße", "7_E_R", "5");
                 list.add(busStation);
-                busStation = new BusStation("Dr. Geiger Weg", "7_E_R", "1");
+                busStation = new BusStation("Dr. Geiger Weg", "7_E_R", "6");
                 list.add(busStation);
-                busStation = new BusStation("Eggendobl", "7_E_R", "1");
+                busStation = new BusStation("Eggendobl", "7_E_R", "7");
                 list.add(busStation);
-                busStation = new BusStation("Eichendorffstraße", "7_E_R", "1");
+                busStation = new BusStation("Eichendorffstraße", "7_E_R", "8");
                 list.add(busStation);
-                busStation = new BusStation("Eichetstraße", "7_E_R", "1");
+                busStation = new BusStation("Eichetstraße", "7_E_R", "9");
                 list.add(busStation);
-                busStation = new BusStation("Freudenhain", "7_E_R", "1");
+                busStation = new BusStation("Freudenhain", "7_E_R", "10");
                 list.add(busStation);
-                busStation = new BusStation("Fürstenweg", "7_E_R", "1");
+                busStation = new BusStation("Fürstenweg", "7_E_R", "11");
                 list.add(busStation);
-                busStation = new BusStation("Gertraudstraße", "7_E_R", "1");
+                busStation = new BusStation("Gertraudstraße", "7_E_R", "12");
                 list.add(busStation);
-                busStation = new BusStation("Glockenstraße", "7_E_R", "1");
+                busStation = new BusStation("Glockenstraße", "7_E_R", "13");
                 list.add(busStation);
-                busStation = new BusStation("Grillenöd", "7_E_R", "1");
+                busStation = new BusStation("Grillenöd", "7_E_R", "14");
                 list.add(busStation);
-                busStation = new BusStation("Herrmann-Woesner Straße", "7_E_R", "1");
+                busStation = new BusStation("Herrmann-Woesner Straße",
+                        "7_E_R", "15");
                 list.add(busStation);
-                busStation = new BusStation("Holzmannstraße", "7_E_R", "1");
+                busStation = new BusStation("Holzmannstraße", "7_E_R", "16");
                 list.add(busStation);
-                busStation = new BusStation("Kraftstraße", "7_E_R", "1");
+                busStation = new BusStation("Kraftstraße", "7_E_R", "17");
                 list.add(busStation);
-                busStation = new BusStation("Kreuzbergstraße", "7_E_R", "1");
+                busStation = new BusStation("Kreuzbergstraße", "7_E_R", "18");
                 list.add(busStation);
-                busStation = new BusStation("Lambergstraße", "7_E_R", "1");
+                busStation = new BusStation("Lambergstraße", "7_E_R", "19");
                 list.add(busStation);
-                busStation = new BusStation("Lautensackstraße", "7_E_R", "1");
+                busStation = new BusStation("Lautensackstraße", "7_E_R", "20");
                 list.add(busStation);
-                busStation = new BusStation("Leopoldstraße", "7_E_R", "1");
+                busStation = new BusStation("Leopoldstraße", "7_E_R", "21");
                 list.add(busStation);
-                busStation = new BusStation("Martin-Seitz Straße", "7_E_R", "1");
+                busStation = new BusStation("Martin-Seitz Straße", "7_E_R",
+                        "22");
                 list.add(busStation);
-                busStation = new BusStation("Max-Matheis Straße", "7_E_R", "1");
+                busStation = new BusStation("Max-Matheis Straße", "7_E_R",
+                        "23");
                 list.add(busStation);
-                busStation = new BusStation("Neustift", "7_E_R", "1");
+                busStation = new BusStation("Neustift", "7_E_R", "24");
                 list.add(busStation);
-                busStation = new BusStation("Plantage", "7_E_R", "1");
+                busStation = new BusStation("Plantage", "7_E_R", "25");
                 list.add(busStation);
-                busStation = new BusStation("Reinhard-Raffalt Straße", "7_E_R", "1");
+                busStation = new BusStation("Reinhard-Raffalt Straße",
+                        "7_E_R", "26");
                 list.add(busStation);
-                busStation = new BusStation("Ries / Rennweg", "7_E_R", "1");
+                busStation = new BusStation("Ries / Rennweg", "7_E_R", "27");
                 list.add(busStation);
-                busStation = new BusStation("Sailerwöhr", "7_E_R", "1");
+                busStation = new BusStation("Sailerwöhr", "7_E_R", "28");
                 list.add(busStation);
-                busStation = new BusStation("Am Schanzl", "7_E_R", "1");
+                busStation = new BusStation("Am Schanzl", "7_E_R", "29");
                 list.add(busStation);
-                busStation = new BusStation("Schreinerbauerweg", "7_E_R", "1");
+                busStation = new BusStation("Schreinerbauerweg", "7_E_R", "30");
                 list.add(busStation);
-                busStation = new BusStation("Schulstraße", "7_E_R", "1");
+                busStation = new BusStation("Schulstraße", "7_E_R", "31");
                 list.add(busStation);
-                busStation = new BusStation("Senefelderstraße", "7_E_R", "1");
+                busStation = new BusStation("Senefelderstraße", "7_E_R", "32");
                 list.add(busStation);
-                busStation = new BusStation("Sturmbergweg", "7_E_R", "1");
+                busStation = new BusStation("Sturmbergweg", "7_E_R", "33");
                 list.add(busStation);
-                busStation = new BusStation("Westendstraße", "7_E_R", "1");
+                busStation = new BusStation("Westendstraße", "7_E_R", "34");
                 list.add(busStation);
-                busStation = new BusStation("Westerburgerstraße", "2", "1");
+                busStation = new BusStation("Westerburgerstraße", "2", "35");
                 list.add(busStation);
-                busStation = new BusStation("ZOB Bussteig 3", "7_E_R", "1");
+                busStation = new BusStation("ZOB Bussteig 3", "7_E_R", "36");
                 list.add(busStation);
                 break;
             case "7_R_E":
-                busStation = new BusStation("Auerspergstraße", "2", "1");
+                busStation = new BusStation("Anzengruberstraße", "7_R_E", "1");
                 list.add(busStation);
-                busStation = new BusStation("Aeußere Spitalhofstraße", "2", "1");
+                busStation = new BusStation("Auerspergstraße", "7_R_E", "2");
                 list.add(busStation);
-                busStation = new BusStation("Danziger Straße", "2", "1");
+                busStation = new BusStation("Aeußere Spitalhofstraße",
+                        "7_R_E", "3");
                 list.add(busStation);
-                busStation = new BusStation("Dr. Geiger Weg", "2", "1");
+                busStation = new BusStation("Danziger Straße", "7_R_E", "4");
                 list.add(busStation);
-                busStation = new BusStation("Eggendobl", "2", "1");
+                busStation = new BusStation("Dr. Geiger Weg", "7_R_E", "5");
                 list.add(busStation);
-                busStation = new BusStation("Eichetstraße", "2", "1");
+                busStation = new BusStation("Eggendobl", "7_R_E", "6");
                 list.add(busStation);
-                busStation = new BusStation("Fürstenweg", "2", "1");
+                busStation = new BusStation("Eichetstraße", "7_R_E", "7");
                 list.add(busStation);
-                busStation = new BusStation("Gertraudstraße", "2", "1");
+                busStation = new BusStation("Fürstenweg", "7_R_E", "8");
                 list.add(busStation);
-                busStation = new BusStation("Glockenstraße", "2", "1");
+                busStation = new BusStation("Gertraudstraße", "7_R_E", "9");
                 list.add(busStation);
-                busStation = new BusStation("Grillenöd", "2", "1");
+                busStation = new BusStation("Glockenstraße", "7_R_E", "10");
                 list.add(busStation);
-                busStation = new BusStation("Herrmann-Woesner Straße", "2", "1");
+                busStation = new BusStation("Grillenöd", "7_R_E", "11");
                 list.add(busStation);
-                busStation = new BusStation("Holzmannstraße", "2", "1");
+                busStation = new BusStation("Herrmann-Woesner Straße",
+                        "7_R_E", "12");
                 list.add(busStation);
-                busStation = new BusStation("Kraftstraße", "2", "1");
+                busStation = new BusStation("Holzmannstraße", "7_R_E", "13");
                 list.add(busStation);
-                busStation = new BusStation("Kreuzbergstraße", "2", "1");
+                busStation = new BusStation("Kraftstraße", "7_R_E", "14");
                 list.add(busStation);
-                busStation = new BusStation("Lambergstraße", "2", "1");
+                busStation = new BusStation("Kreuzbergstraße", "7_R_E", "15");
                 list.add(busStation);
-                busStation = new BusStation("Lautensackstraße", "2", "1");
+                busStation = new BusStation("Lambergstraße", "7_R_E", "16");
                 list.add(busStation);
-                busStation = new BusStation("Leopoldstraße", "2", "1");
+                busStation = new BusStation("Lautensackstraße", "7_R_E", "17");
                 list.add(busStation);
-                busStation = new BusStation("Martin-Seitz Straße", "2", "1");
+                busStation = new BusStation("Leopoldstraße", "7_R_E", "18");
                 list.add(busStation);
-                busStation = new BusStation("Max-Matheis Straße", "2", "1");
+                busStation = new BusStation("Martin-Seitz Straße", "7_R_E",
+                        "19");
                 list.add(busStation);
-                busStation = new BusStation("Neustift", "2", "1");
+                busStation = new BusStation("Max-Matheis Straße", "7_R_E",
+                        "20");
                 list.add(busStation);
-                busStation = new BusStation("Plantage", "2", "1");
+                busStation = new BusStation("Neustift", "7_R_E", "21");
                 list.add(busStation);
-                busStation = new BusStation("Reinhard-Raffalt Straße", "2", "1");
+                busStation = new BusStation("Plantage", "7_R_E", "22");
                 list.add(busStation);
-                busStation = new BusStation("Ries", "2", "1");
+                busStation = new BusStation("Reinhard-Raffalt Straße",
+                        "7_R_E", "23");
                 list.add(busStation);
-                busStation = new BusStation("Sailerwöhr", "2", "1");
+                busStation = new BusStation("Ries", "7_R_E", "24");
                 list.add(busStation);
-                busStation = new BusStation("Schreinerbauerweg", "2", "1");
+                busStation = new BusStation("Sailerwöhr", "7_R_E", "25");
                 list.add(busStation);
-                busStation = new BusStation("Schulstraße", "2", "1");
+                busStation = new BusStation("Schanzlbrücke", "7_R_E", "26");
                 list.add(busStation);
-                busStation = new BusStation("Senefelderstraße", "2", "1");
+                busStation = new BusStation("Schreinerbauerweg", "7_R_E", "27");
                 list.add(busStation);
-                busStation = new BusStation("Anzengruberstraße", "2", "1");
+                busStation = new BusStation("Schulstraße", "7_R_E", "28");
                 list.add(busStation);
-                busStation = new BusStation("ZOB Bussteig 2", "2", "1");
+                busStation = new BusStation("Senefelderstraße", "7_R_E", "29");
                 list.add(busStation);
-                busStation = new BusStation("Anzengruberstraße", "2", "1");
+                busStation = new BusStation("Westerburgerstraße", "7_R_E",
+                        "30");
                 list.add(busStation);
-                busStation = new BusStation("Schanzlbrücke", "2", "1");
+                busStation = new BusStation("ZOB Bussteig 2", "7_R_E", "31");
                 list.add(busStation);
-                busStation = new BusStation("Westerburgerstraße", "2", "1");
-                list.add(busStation);
+
+
                 break;
             case "8_9_Kohl_Koenig":
-                busStation = new BusStation("Apfelkoch", "2", "1");
+                busStation = new BusStation("Apfelkoch", "8_9_Kohl_Koenig", "1");
                 list.add(busStation);
-                busStation = new BusStation("Augustinergasse", "2", "1");
+                busStation = new BusStation("Augustinergasse",
+                        "8_9_Kohl_Koenig", "2");
                 list.add(busStation);
-                busStation = new BusStation("Birkhamerstraße", "2", "1");
+                busStation = new BusStation("Bahnhofstraße",
+                        "8_9_Kohl_Koenig", "3");
                 list.add(busStation);
-                busStation = new BusStation("Breslauerstraße", "2", "1");
+                busStation = new BusStation("Birkhamerstraße",
+                        "8_9_Kohl_Koenig", "4");
                 list.add(busStation);
-                busStation = new BusStation("Dr. Winklhofer Straße", "2", "1");
+                busStation = new BusStation("Breslauerstraße",
+                        "8_9_Kohl_Koenig", "5");
                 list.add(busStation);
-                busStation = new BusStation("Gionstraße", "2", "1");
+                busStation = new BusStation("Dr. Winklhofer Straße",
+                        "8_9_Kohl_Koenig", "6");
                 list.add(busStation);
-                busStation = new BusStation("Graf-Salm Straße", "2", "1");
+                busStation = new BusStation("Gionstraße", "8_9_Kohl_Koenig",
+                        "7");
                 list.add(busStation);
-                busStation = new BusStation("Gustav-Haydn Straße", "2", "1");
+                busStation = new BusStation("Graf-Salm Straße",
+                        "8_9_Kohl_Koenig", "8");
                 list.add(busStation);
-                busStation = new BusStation("Hacklstein", "2", "1");
+                busStation = new BusStation("Gustav-Haydn Straße",
+                        "8_9_Kohl_Koenig", "9");
                 list.add(busStation);
-                busStation = new BusStation("Hauptbahnhof", "2", "1");
+                busStation = new BusStation("Hacklstein", "8_9_Kohl_Koenig",
+                        "10");
                 list.add(busStation);
-                busStation = new BusStation("Heining", "2", "1");
+                busStation = new BusStation("Hauptbahnhof",
+                        "8_9_Kohl_Koenig", "11");
                 list.add(busStation);
-                busStation = new BusStation("Kachlet", "2", "1");
+                busStation = new BusStation("Heining", "8_9_Kohl_Koenig", "12");
                 list.add(busStation);
-                busStation = new BusStation("Klinikum", "2", "1");
+                busStation = new BusStation("Kachlet", "8_9_Kohl_Koenig", "13");
                 list.add(busStation);
-                busStation = new BusStation("Kohlbruck / Erlebnisbad PEB", "2", "1");
+                busStation = new BusStation("Klinikum", "8_9_Kohl_Koenig",
+                        "14");
                 list.add(busStation);
-                busStation = new BusStation("Königsberger Straße", "2", "1");
+                busStation = new BusStation("Kohlbruck / Erlebnisbad PEB",
+                        "8_9_Kohl_Koenig", "15");
                 list.add(busStation);
-                busStation = new BusStation("Oberöder Weg", "2", "1");
+                busStation = new BusStation("Königsberger Straße",
+                        "8_9_Kohl_Koenig", "16");
                 list.add(busStation);
-                busStation = new BusStation("Raiffeisenstraße", "2", "1");
+                busStation = new BusStation("Oberöder Weg",
+                        "8_9_Kohl_Koenig", "17");
                 list.add(busStation);
-                busStation = new BusStation("Rittsteig", "2", "1");
+                busStation = new BusStation("Raiffeisenstraße",
+                        "8_9_Kohl_Koenig", "18");
                 list.add(busStation);
-                busStation = new BusStation("Schönleitnerweg", "2", "1");
+                busStation = new BusStation("Rittsteig", "8_9_Kohl_Koenig",
+                        "19");
                 list.add(busStation);
-                busStation = new BusStation("Simmerlingsweg", "2", "1");
+                busStation = new BusStation("Schönleitnerweg",
+                        "8_9_Kohl_Koenig", "20");
                 list.add(busStation);
-                busStation = new BusStation("Söldenpeterweg", "2", "1");
+                busStation = new BusStation("Simmerlingsweg",
+                        "8_9_Kohl_Koenig", "21");
                 list.add(busStation);
-                busStation = new BusStation("Steinbachmühle", "2", "1");
+                busStation = new BusStation("Söldenpeterweg",
+                        "8_9_Kohl_Koenig", "22");
                 list.add(busStation);
-                busStation = new BusStation("Stelzhamer Straße", "2", "1");
+                busStation = new BusStation("Steinbachmühle",
+                        "8_9_Kohl_Koenig", "23");
                 list.add(busStation);
-                busStation = new BusStation("Universität", "2", "1");
+                busStation = new BusStation("Stelzhamer Straße",
+                        "8_9_Kohl_Koenig", "24");
                 list.add(busStation);
-                busStation = new BusStation("Vornholz", "2", "1");
+                busStation = new BusStation("Universität", "8_9_Kohl_Koenig",
+                        "25");
                 list.add(busStation);
-                busStation = new BusStation("Weinleitenweg", "2", "1");
+                busStation = new BusStation("Vornholz", "8_9_Kohl_Koenig",
+                        "26");
                 list.add(busStation);
-                busStation = new BusStation("Winzerleite", "2", "1");
+                busStation = new BusStation("Weinleitenweg",
+                        "8_9_Kohl_Koenig", "27");
                 list.add(busStation);
-                busStation = new BusStation("Wörthstraße", "2", "1");
+                busStation = new BusStation("Winzerleite", "8_9_Kohl_Koenig",
+                        "28");
                 list.add(busStation);
-                busStation = new BusStation("ZOB Bussteig 3", "2", "1");
+                busStation = new BusStation("Wörthstraße", "8_9_Kohl_Koenig",
+                        "29");
                 list.add(busStation);
-                busStation = new BusStation("Bahnhofstraße", "2", "1");
+                busStation = new BusStation("ZOB Bussteig 3",
+                        "8_9_Kohl_Koenig", "30");
                 list.add(busStation);
                 break;
             case "8_9_Koenig_Kohl":
-                busStation = new BusStation("Apfelkoch", "2", "1");
+                busStation = new BusStation("Apfelkoch", "8_9_Koenig_Kohl", "1");
                 list.add(busStation);
-                busStation = new BusStation("Augustinergasse", "2", "1");
+                busStation = new BusStation("Augustinergasse",
+                        "8_9_Koenig_Kohl", "2");
                 list.add(busStation);
-                busStation = new BusStation("B. von Behr Straße", "2", "1");
+                busStation = new BusStation("B. von Behr Straße",
+                        "8_9_Koenig_Kohl", "3");
                 list.add(busStation);
-                busStation = new BusStation("Birkhamerstraße", "2", "1");
+                busStation = new BusStation("Bahnhofstraße",
+                        "8_9_Koenig_Kohl", "4");
                 list.add(busStation);
-                busStation = new BusStation("Breslauerstraße", "2", "1");
+                busStation = new BusStation("Birkhamerstraße",
+                        "8_9_Koenig_Kohl", "5");
                 list.add(busStation);
-                busStation = new BusStation("Eich", "2", "1");
+                busStation = new BusStation("Breslauerstraße",
+                        "8_9_Koenig_Kohl", "6");
                 list.add(busStation);
-                busStation = new BusStation("Gionstraße", "2", "1");
+                busStation = new BusStation("Eich", "8_9_Koenig_Kohl", "7");
                 list.add(busStation);
-                busStation = new BusStation("Graf-Salm Straße", "2", "1");
+                busStation = new BusStation("Gionstraße", "8_9_Koenig_Kohl",
+                        "8");
                 list.add(busStation);
-                busStation = new BusStation("Parkhaus Bahnhofstraße", "2", "1");
+                busStation = new BusStation("Graf-Salm Straße",
+                        "8_9_Koenig_Kohl", "9");
                 list.add(busStation);
-                busStation = new BusStation("Hacklstein", "2", "1");
+                busStation = new BusStation("Parkhaus Bahnhofstraße",
+                        "8_9_Koenig_Kohl", "10");
                 list.add(busStation);
-                busStation = new BusStation("Hauptbahnhof", "2", "1");
+                busStation = new BusStation("Hacklstein", "8_9_Koenig_Kohl",
+                        "11");
                 list.add(busStation);
-                busStation = new BusStation("Heining", "2", "1");
+                busStation = new BusStation("Hauptbahnhof",
+                        "8_9_Koenig_Kohl", "12");
                 list.add(busStation);
-                busStation = new BusStation("Hermann-Woesner Straße", "2", "1");
+                busStation = new BusStation("Heining", "8_9_Koenig_Kohl", "13");
                 list.add(busStation);
-                busStation = new BusStation("Pater-Rupert-Mayer Straße", "2", "1");
+                busStation = new BusStation("Hermann-Woesner Straße",
+                        "8_9_Koenig_Kohl", "14");
                 list.add(busStation);
-                busStation = new BusStation("Hofmannsthalstraße", "2", "1");
+                busStation = new BusStation("Pater-Rupert-Mayer Straße",
+                        "8_9_Koenig_Kohl", "15");
                 list.add(busStation);
-                busStation = new BusStation("Holzmannstraße", "2", "1");
+                busStation = new BusStation("Hofmannsthalstraße",
+                        "8_9_Koenig_Kohl", "16");
                 list.add(busStation);
-                busStation = new BusStation("Kachlet", "2", "1");
+                busStation = new BusStation("Holzmannstraße",
+                        "8_9_Koenig_Kohl", "17");
                 list.add(busStation);
-                busStation = new BusStation("Klinikum", "2", "1");
+                busStation = new BusStation("Kachlet", "8_9_Koenig_Kohl", "18");
                 list.add(busStation);
-                busStation = new BusStation("Königsberger Straße", "2", "1");
+                busStation = new BusStation("Klinikum", "8_9_Koenig_Kohl",
+                        "19");
                 list.add(busStation);
-                busStation = new BusStation("Königschalding", "2", "1");
+                busStation = new BusStation("Königsberger Straße",
+                        "8_9_Koenig_Kohl", "20");
                 list.add(busStation);
-                busStation = new BusStation("Neustift", "2", "1");
+                busStation = new BusStation("Königschalding",
+                        "8_9_Koenig_Kohl", "21");
                 list.add(busStation);
-                busStation = new BusStation("Raiffeisenstraße", "2", "1");
+                busStation = new BusStation("Neustift", "8_9_Koenig_Kohl",
+                        "22");
                 list.add(busStation);
-                busStation = new BusStation("Rittsteig", "2", "1");
+                busStation = new BusStation("Raiffeisenstraße",
+                        "8_9_Koenig_Kohl", "23");
                 list.add(busStation);
-                busStation = new BusStation("Schönleitnerweg", "2", "1");
+                busStation = new BusStation("Richterstraße",
+                        "8_9_Koenig_Kohl", "24");
                 list.add(busStation);
-                busStation = new BusStation("Simmerlingsweg", "2", "1");
+                busStation = new BusStation("Rittsteig", "8_9_Koenig_Kohl",
+                        "25");
                 list.add(busStation);
-                busStation = new BusStation("Söldenpeterweg", "2", "1");
+                busStation = new BusStation("Schönleitnerweg",
+                        "8_9_Koenig_Kohl", "26");
                 list.add(busStation);
-                busStation = new BusStation("Stallerweg", "2", "1");
+                busStation = new BusStation("Simmerlingsweg",
+                        "8_9_Koenig_Kohl", "27");
                 list.add(busStation);
-                busStation = new BusStation("Steinbachmühle", "2", "1");
+                busStation = new BusStation("Söldenpeterweg",
+                        "8_9_Koenig_Kohl", "28");
                 list.add(busStation);
-                busStation = new BusStation("Stelzhamer Straße", "2", "1");
+                busStation = new BusStation("Stallerweg", "8_9_Koenig_Kohl",
+                        "29");
                 list.add(busStation);
-                busStation = new BusStation("Universität", "2", "1");
+                busStation = new BusStation("Steinbachmühle",
+                        "8_9_Koenig_Kohl", "30");
                 list.add(busStation);
-                busStation = new BusStation("Vornholz", "2", "1");
+                busStation = new BusStation("Stelzhamer Straße",
+                        "8_9_Koenig_Kohl", "31");
                 list.add(busStation);
-                busStation = new BusStation("Weinleitenweg", "2", "1");
+                busStation = new BusStation("Universität", "8_9_Koenig_Kohl",
+                        "32");
                 list.add(busStation);
-                busStation = new BusStation("Westendstraße", "2", "1");
+                busStation = new BusStation("Vornholz", "8_9_Koenig_Kohl",
+                        "33");
                 list.add(busStation);
-                busStation = new BusStation("Wörthstraße", "2", "1");
+                busStation = new BusStation("Weinleitenweg",
+                        "8_9_Koenig_Kohl", "34");
                 list.add(busStation);
-                busStation = new BusStation("ZOB Bussteig 2", "2", "1");
+                busStation = new BusStation("Westendstraße",
+                        "8_9_Koenig_Kohl", "35");
                 list.add(busStation);
-                busStation = new BusStation("Richterstraße", "2", "1");
+                busStation = new BusStation("Wörthstraße", "8_9_Koenig_Kohl",
+                        "36");
                 list.add(busStation);
-                busStation = new BusStation("Bahnhofstraße", "2", "1");
+                busStation = new BusStation("ZOB Bussteig 2",
+                        "8_9_Koenig_Kohl", "37");
                 list.add(busStation);
                 break;
             case "10_Z_S":
-                busStation = new BusStation("Buchenstraße", "2", "1");
+                busStation = new BusStation("Bahnhofsstraße", "10_Z_S", "1");
                 list.add(busStation);
-                busStation = new BusStation("Gartenstraße", "2", "1");
+                busStation = new BusStation("Buchenstraße", "10_Z_S", "2");
                 list.add(busStation);
-                busStation = new BusStation("Hauptbahnhof", "2", "1");
+                busStation = new BusStation("Gartenstraße", "10_Z_S", "3");
                 list.add(busStation);
-                busStation = new BusStation("Hochlandweg", "2", "1");
+                busStation = new BusStation("Hauptbahnhof", "10_Z_S", "4");
                 list.add(busStation);
-                busStation = new BusStation("Holzmannstraße", "2", "1");
+                busStation = new BusStation("Hochlandweg", "10_Z_S", "5");
                 list.add(busStation);
-                busStation = new BusStation("Neustift", "2", "1");
+                busStation = new BusStation("Holzmannstraße", "10_Z_S", "6");
                 list.add(busStation);
-                busStation = new BusStation("Prügelweg", "2", "1");
+                busStation = new BusStation("Neustift", "10_Z_S", "7");
                 list.add(busStation);
-                busStation = new BusStation("Raiffeisenstraße", "2", "1");
+                busStation = new BusStation("Prügelweg", "10_Z_S", "8");
                 list.add(busStation);
-                busStation = new BusStation("Reuthinger Weg", "2", "1");
+                busStation = new BusStation("Raiffeisenstraße", "10_Z_S", "9");
                 list.add(busStation);
-                busStation = new BusStation("Schalding r.d.D.", "2", "1");
+                busStation = new BusStation("Reuthinger Weg", "10_Z_S", "10");
                 list.add(busStation);
-                busStation = new BusStation("Steinbachmühle", "2", "1");
+                busStation = new BusStation("Schalding r.d.D.", "10_Z_S", "11");
                 list.add(busStation);
-                busStation = new BusStation("Stelzhamer Straße", "2", "1");
+                busStation = new BusStation("Steinbachmühle", "10_Z_S", "12");
                 list.add(busStation);
-                busStation = new BusStation("Westendstraße", "2", "1");
+                busStation = new BusStation("Stelzhamer Straße", "10_Z_S",
+                        "13");
                 list.add(busStation);
-                busStation = new BusStation("Winzerleite", "2", "1");
+                busStation = new BusStation("Westendstraße", "10_Z_S", "14");
                 list.add(busStation);
-                busStation = new BusStation("ZOB Bussteig 4", "2", "1");
+                busStation = new BusStation("Winzerleite", "10_Z_S", "15");
                 list.add(busStation);
-                busStation = new BusStation("Bahnhofsstraße", "2", "1");
+                busStation = new BusStation("ZOB Bussteig 4", "10_Z_S", "16");
                 list.add(busStation);
                 break;
             case "10_S_Z":
-                busStation = new BusStation("Buchenstraße", "2", "1");
+                busStation = new BusStation("Bahnhofsstraße", "10_S_Z", "1");
                 list.add(busStation);
-                busStation = new BusStation("Einöder Straße", "2", "1");
+                busStation = new BusStation("Buchenstraße", "10_S_Z", "2");
                 list.add(busStation);
-                busStation = new BusStation("Gartenstraße", "2", "1");
+                busStation = new BusStation("Einöder Straße", "10_S_Z", "3");
                 list.add(busStation);
-                busStation = new BusStation("Parkhaus Bahnhofsstraße", "2", "1");
+                busStation = new BusStation("Gartenstraße", "10_S_Z", "4");
                 list.add(busStation);
-                busStation = new BusStation("Hauptbahnhof", "2", "1");
+                busStation = new BusStation("Parkhaus Bahnhofsstraße",
+                        "10_S_Z", "5");
                 list.add(busStation);
-                busStation = new BusStation("Hochlandweg", "2", "1");
+                busStation = new BusStation("Hauptbahnhof", "10_S_Z", "6");
                 list.add(busStation);
-                busStation = new BusStation("Hoffeldweg", "2", "1");
+                busStation = new BusStation("Hochlandweg", "10_S_Z", "7");
                 list.add(busStation);
-                busStation = new BusStation("Holzmannstraße", "2", "1");
+                busStation = new BusStation("Hoffeldweg", "10_S_Z", "8");
                 list.add(busStation);
-                busStation = new BusStation("Neustift", "2", "1");
+                busStation = new BusStation("Holzmannstraße", "10_S_Z", "9");
                 list.add(busStation);
-                busStation = new BusStation("Prügelweg", "2", "1");
+                busStation = new BusStation("Neustift", "10_S_Z", "10");
                 list.add(busStation);
-                busStation = new BusStation("Raiffeisenstraße", "2", "1");
+                busStation = new BusStation("Prügelweg", "10_S_Z", "11");
                 list.add(busStation);
-                busStation = new BusStation("Reuthinger Weg", "2", "1");
+                busStation = new BusStation("Raiffeisenstraße", "10_S_Z", "12");
                 list.add(busStation);
-                busStation = new BusStation("Schalding r.d.D.", "2", "1");
+                busStation = new BusStation("Reuthinger Weg", "10_S_Z", "13");
                 list.add(busStation);
-                busStation = new BusStation("Steinbachmühle", "2", "1");
+                busStation = new BusStation("Schalding r.d.D.", "10_S_Z", "14");
                 list.add(busStation);
-                busStation = new BusStation("Stelzhamer Straße", "2", "1");
+                busStation = new BusStation("Steinbachmühle", "10_S_Z", "15");
                 list.add(busStation);
-                busStation = new BusStation("Westendstraße", "2", "1");
+                busStation = new BusStation("Stelzhamer Straße", "10_S_Z",
+                        "16");
                 list.add(busStation);
-                busStation = new BusStation("Winzerleite", "2", "1");
+                busStation = new BusStation("Westendstraße", "10_S_Z", "17");
                 list.add(busStation);
-                busStation = new BusStation("Bahnhofsstraße", "2", "1");
+                busStation = new BusStation("Winzerleite", "10_S_Z", "18");
                 list.add(busStation);
                 break;
             case "11_Z_S":
-                busStation = new BusStation("B. von Behr Straße", "2", "1");
+                busStation = new BusStation("Anzengruberstraße", "11_Z_S", "1");
                 list.add(busStation);
-                busStation = new BusStation("Carossastraße", "2", "1");
+                busStation = new BusStation("B. von Behr Straße", "11_Z_S",
+                        "2");
                 list.add(busStation);
-                busStation = new BusStation("Eichendorffstraße", "2", "1");
+                busStation = new BusStation("Bahnhofstraße", "v", "3");
                 list.add(busStation);
-                busStation = new BusStation("Eichetstraße", "2", "1");
+                busStation = new BusStation("Carossastraße", "11_Z_S", "4");
                 list.add(busStation);
-                busStation = new BusStation("Emerenz-Meier Straße", "2", "1");
+                busStation = new BusStation("Eichendorffstraße", "11_Z_S", "5");
                 list.add(busStation);
-                busStation = new BusStation("Hacklstein", "2", "1");
+                busStation = new BusStation("Eichetstraße", "11_Z_S", "6");
                 list.add(busStation);
-                busStation = new BusStation("Hauptbahnhof", "2", "1");
+                busStation = new BusStation("Emerenz-Meier Straße", "11_Z_S",
+                        "7");
                 list.add(busStation);
-                busStation = new BusStation("Heining", "2", "1");
+                busStation = new BusStation("Hacklstein", "11_Z_S", "8");
                 list.add(busStation);
-                busStation = new BusStation("Kachlet", "2", "1");
+                busStation = new BusStation("Hauptbahnhof", "11_Z_S", "9");
                 list.add(busStation);
-                busStation = new BusStation("Lautensackstraße", "2", "1");
+                busStation = new BusStation("Heining", "11_Z_S", "10");
                 list.add(busStation);
-                busStation = new BusStation("Martin-Seitz Straße", "2", "1");
+                busStation = new BusStation("Kachlet", "11_Z_S", "11");
                 list.add(busStation);
-                busStation = new BusStation("Raiffeisenstraße", "2", "1");
+                busStation = new BusStation("Lautensackstraße", "11_Z_S", "12");
                 list.add(busStation);
-                busStation = new BusStation("Reinhard-Raffalt Straße", "2", "1");
+                busStation = new BusStation("Martin-Seitz Straße", "11_Z_S",
+                        "13");
                 list.add(busStation);
-                busStation = new BusStation("Rittsteigerstraße", "2", "1");
+                busStation = new BusStation("Raiffeisenstraße", "11_Z_S", "14");
                 list.add(busStation);
-                busStation = new BusStation("Stallerweg", "2", "1");
+                busStation = new BusStation("Reinhard-Raffalt Straße",
+                        "11_Z_S", "15");
                 list.add(busStation);
-                busStation = new BusStation("Steinbachmühle", "2", "1");
+                busStation = new BusStation("Rittsteigerstraße", "11_Z_S",
+                        "16");
                 list.add(busStation);
-                busStation = new BusStation("Stelzhamer Straße", "2", "1");
+                busStation = new BusStation("Stallerweg", "11_Z_S", "17");
                 list.add(busStation);
-                busStation = new BusStation("Anzengruberstraße", "2", "1");
+                busStation = new BusStation("Steinbachmühle", "11_Z_S", "18");
                 list.add(busStation);
-                busStation = new BusStation("ZOB Bussteig 4", "2", "1");
+                busStation = new BusStation("Stelzhamer Straße", "11_Z_S",
+                        "19");
                 list.add(busStation);
-                busStation = new BusStation("Bahnhofstraße", "2", "1");
+                busStation = new BusStation("ZOB Bussteig 4", "11_Z_S", "20");
                 list.add(busStation);
                 break;
             case "11_S_Z":
-                busStation = new BusStation("Carossastraße", "2", "1");
+                busStation = new BusStation("Bahnhofstraße", "11_S_Z", "1");
                 list.add(busStation);
-                busStation = new BusStation("Emerenz-Meier Straße", "2", "1");
+                busStation = new BusStation("Carossastraße", "11_S_Z", "2");
                 list.add(busStation);
-                busStation = new BusStation("Parkhaus Bahnhofstraße", "2", "1");
+                busStation = new BusStation("Emerenz-Meier Straße", "11_S_Z",
+                        "3");
                 list.add(busStation);
-                busStation = new BusStation("Hacklstein", "2", "1");
+                busStation = new BusStation("Parkhaus Bahnhofstraße", "11_S_Z",
+                        "4");
                 list.add(busStation);
-                busStation = new BusStation("Hauptbahnhof", "2", "1");
+                busStation = new BusStation("Hacklstein", "11_S_Z", "5");
                 list.add(busStation);
-                busStation = new BusStation("Heining", "2", "1");
+                busStation = new BusStation("Hauptbahnhof", "11_S_Z", "6");
                 list.add(busStation);
-                busStation = new BusStation("Kachlet", "2", "1");
+                busStation = new BusStation("Heining", "11_S_Z", "7");
                 list.add(busStation);
-                busStation = new BusStation("Raiffeisenstraße", "2", "1");
+                busStation = new BusStation("Kachlet", "11_S_Z", "8");
                 list.add(busStation);
-                busStation = new BusStation("Reinhard-Raffalt Straße", "2", "1");
+                busStation = new BusStation("Raiffeisenstraße", "11_S_Z", "9");
                 list.add(busStation);
-                busStation = new BusStation("Senefelderstraße", "2", "1");
+                busStation = new BusStation("Reinhard-Raffalt Straße", "11_S_Z",
+                        "10");
                 list.add(busStation);
-                busStation = new BusStation("Steinbachmühle", "2", "1");
+                busStation = new BusStation("Senefelderstraße", "11_S_Z", "11");
                 list.add(busStation);
-                busStation = new BusStation("Stelzhamer Straße", "2", "1");
+                busStation = new BusStation("Steinbachmühle", "11_S_Z", "12");
                 list.add(busStation);
-                busStation = new BusStation("Bahnhofstraße", "2", "1");
+                busStation = new BusStation("Stelzhamer Straße", "11_S_Z",
+                        "13");
                 list.add(busStation);
                 break;
             case "K1_L_M":
