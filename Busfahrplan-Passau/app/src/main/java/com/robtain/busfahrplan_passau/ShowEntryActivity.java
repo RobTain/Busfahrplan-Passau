@@ -34,7 +34,7 @@ import java.io.File;
  */
 public class ShowEntryActivity extends AppCompatActivity {
     private String keyword;
-    private String busStop;
+    private BusStation busStop;
     private ImageView imageView;
     private int currentPage = 0;
     private Tools tools;
@@ -49,8 +49,7 @@ public class ShowEntryActivity extends AppCompatActivity {
         //get keyword
         Intent i = getIntent();
         keyword = i.getStringExtra("keyword");
-        busStop = i.getStringExtra("busstop");
-        Log.e(keyword,busStop);
+        busStop = (BusStation) i.getExtras().getSerializable("busstop");
 
         //set color statusbar
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -106,8 +105,7 @@ public class ShowEntryActivity extends AppCompatActivity {
     }
 
     private void findPicture() {
-        String path = busStop.toLowerCase().replace('ß','s') + keyword;
-        Log.e(path,path);
+        String path = keyword+busStop.getId();
 
        Resources res = getResources();
         int id = res.getIdentifier(path, "drawable",getPackageName());

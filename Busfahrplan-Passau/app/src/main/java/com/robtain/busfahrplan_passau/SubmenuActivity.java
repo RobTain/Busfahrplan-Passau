@@ -128,7 +128,6 @@ public class SubmenuActivity extends AppCompatActivity {
                     o = busStations.get(i);
                     bs = (BusStation) o;
                     if (bs.getTitle().equals(itemValue)) {
-                        busStop = bs.getTitle();
                         break;
                     }
                 }
@@ -137,7 +136,7 @@ public class SubmenuActivity extends AppCompatActivity {
                 Intent i = new Intent(SubmenuActivity.this,
                         ShowEntryActivity.class);
                 i.putExtra("keyword", keyword);
-                i.putExtra("busstop", busStop);
+                i.putExtra("busstop", bs);
                 startActivity(i);
             }
 
