@@ -245,7 +245,7 @@ public class Tools {
         LinkedList<BusStation> list = new LinkedList<>();
         switch (s) {
             case "1_2":
-                busStation = new BusStation("Abteistr");
+                busStation = new BusStation("Abteistraße");
                 list.add(busStation);
                 busStation = new BusStation("Breiteich");
                 list.add(busStation);
@@ -253,7 +253,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Christdobl");
                 list.add(busStation);
-                busStation = new BusStation("Dr. Emil-Brichta-Str.");
+                busStation = new BusStation("Dr. Emil-Brichta Straße");
                 list.add(busStation);
                 busStation = new BusStation("Englmeierstraße");
                 list.add(busStation);
@@ -265,7 +265,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Ilzbrücke");
                 list.add(busStation);
-                busStation = new BusStation("Josef-Wenzl-Str.");
+                busStation = new BusStation("Josef-Wenzl Straße");
                 list.add(busStation);
                 busStation = new BusStation("Kainzenweg");
                 list.add(busStation);
@@ -279,7 +279,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Nagelschmiedgasse");
                 list.add(busStation);
-                busStation = new BusStation("Prinz-Eugen-Straße");
+                busStation = new BusStation("Prinz-Eugen Straße");
                 list.add(busStation);
                 busStation = new BusStation("Rathaus");
                 list.add(busStation);
@@ -299,7 +299,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Waldschmidtstraße");
                 list.add(busStation);
-                busStation = new BusStation("Wilhelm-Niedermayer-Str.");
+                busStation = new BusStation("Wilhelm-Niedermayer Straße");
                 list.add(busStation);
                 busStation = new BusStation("Zahnradfabrik / Werk 1");
                 list.add(busStation);
@@ -311,13 +311,13 @@ public class Tools {
                 list.add(busStation);
                 break;
             case "1":
-                busStation = new BusStation("Abteistr");
+                busStation = new BusStation("Abteistraße");
                 list.add(busStation);
                 busStation = new BusStation("Breslauer Straße");
                 list.add(busStation);
                 busStation = new BusStation("Christdobl");
                 list.add(busStation);
-                busStation = new BusStation("Dr. Emil-Brichta-Str.");
+                busStation = new BusStation("Dr. Emil-Brichta Straße");
                 list.add(busStation);
                 busStation = new BusStation("Englmeierstraße");
                 list.add(busStation);
@@ -329,11 +329,11 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Ilzbrücke");
                 list.add(busStation);
-                busStation = new BusStation("Josef-Wenzl-Str.");
+                busStation = new BusStation("Josef-Wenzl Straße");
                 list.add(busStation);
                 busStation = new BusStation("Kainzenweg");
                 list.add(busStation);
-                busStation = new BusStation("Kohlbruck / Erlebnisbad");
+                busStation = new BusStation("Kohlbruck / Erlebnisbad PEB");
                 list.add(busStation);
                 busStation = new BusStation("Laimgrub");
                 list.add(busStation);
@@ -343,7 +343,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Nagelschmiedgasse");
                 list.add(busStation);
-                busStation = new BusStation("Prinz-Eugen-Straße");
+                busStation = new BusStation("Prinz-Eugen Straße");
                 list.add(busStation);
                 busStation = new BusStation("Rathaus");
                 list.add(busStation);
@@ -369,7 +369,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Christdobl");
                 list.add(busStation);
-                busStation = new BusStation("Dr. Emil-Brichta-Str.");
+                busStation = new BusStation("Dr. Emil-Brichta Straße");
                 list.add(busStation);
                 busStation = new BusStation("Englmeierstraße");
                 list.add(busStation);
@@ -379,7 +379,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Ilzbrücke");
                 list.add(busStation);
-                busStation = new BusStation("Josef-Wenzl-Str.");
+                busStation = new BusStation("Josef-Wenzl Straße");
                 list.add(busStation);
                 busStation = new BusStation("Kainzenweg");
                 list.add(busStation);
@@ -391,7 +391,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Nagelschmiedgasse");
                 list.add(busStation);
-                busStation = new BusStation("Prinz-Eugen-Straße");
+                busStation = new BusStation("Prinz-Eugen Straße");
                 list.add(busStation);
                 busStation = new BusStation("Rathaus");
                 list.add(busStation);
@@ -411,7 +411,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Waldschmidtstraße");
                 list.add(busStation);
-                busStation = new BusStation("Wilhelm-Niedermayer-Str.");
+                busStation = new BusStation("Wilhelm-Niedermayer Straße");
                 list.add(busStation);
                 busStation = new BusStation("Schanzlturm");
                 list.add(busStation);
@@ -453,7 +453,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Jesuitenschlößl");
                 list.add(busStation);
-                busStation = new BusStation("Johann-Bergler-Straße");
+                busStation = new BusStation("Johann-Bergler Straße");
                 list.add(busStation);
                 busStation = new BusStation("Kirchenplatz");
                 list.add(busStation);
@@ -561,7 +561,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Jesuitenschlößl");
                 list.add(busStation);
-                busStation = new BusStation("Johann-Bergler-Straße");
+                busStation = new BusStation("Johann-Bergler Straße");
                 list.add(busStation);
                 busStation = new BusStation("Kremserstraße");
                 list.add(busStation);
@@ -597,11 +597,11 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Donauhof");
                 list.add(busStation);
-                busStation = new BusStation("Donau-Schwaben-Straße");
+                busStation = new BusStation("Donau-Schwaben Straße");
                 list.add(busStation);
-                busStation = new BusStation("Dr. Ernst.-Derra-Str.");
+                busStation = new BusStation("Dr. Ernst.-Derra Straße");
                 list.add(busStation);
-                busStation = new BusStation("Dr. Geiger-Weg");
+                busStation = new BusStation("Dr. Geiger Weg");
                 list.add(busStation);
                 busStation = new BusStation("Eggendobl");
                 list.add(busStation);
@@ -613,7 +613,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Glockenstraße");
                 list.add(busStation);
-                busStation = new BusStation("Gretli-Fuchs-Straße");
+                busStation = new BusStation("Gretli-Fuchs Straße");
                 list.add(busStation);
                 busStation = new BusStation("Grillenöd");
                 list.add(busStation);
@@ -681,7 +681,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Am Schnanzl");
                 list.add(busStation);
-                busStation = new BusStation("Betty-Pfleger-Straße");
+                busStation = new BusStation("Betty-Pfleger Straße");
                 list.add(busStation);
                 busStation = new BusStation("Zieglstadl");
                 list.add(busStation);
@@ -707,11 +707,11 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Donauhof");
                 list.add(busStation);
-                busStation = new BusStation("Donau-Schwaben-Straße");
+                busStation = new BusStation("Donau-Schwaben Straße");
                 list.add(busStation);
-                busStation = new BusStation("Dr. Ernst.-Derra-Str.");
+                busStation = new BusStation("Dr. Ernst.-Derra Straße");
                 list.add(busStation);
-                busStation = new BusStation("Dr. Geiger-Weg");
+                busStation = new BusStation("Dr. Geiger Weg");
                 list.add(busStation);
                 busStation = new BusStation("Eggendobl");
                 list.add(busStation);
@@ -729,7 +729,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Glockenstraße");
                 list.add(busStation);
-                busStation = new BusStation("Gretli-Fuchs-Straße");
+                busStation = new BusStation("Gretli-Fuchs Straße");
                 list.add(busStation);
                 busStation = new BusStation("Grillenöd");
                 list.add(busStation);
@@ -805,7 +805,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Danziger Straße");
                 list.add(busStation);
-                busStation = new BusStation("Dr. Geiger-Weg");
+                busStation = new BusStation("Dr. Geiger Weg");
                 list.add(busStation);
                 busStation = new BusStation("Eggendobl");
                 list.add(busStation);
@@ -823,7 +823,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Grillenöd");
                 list.add(busStation);
-                busStation = new BusStation("Herrmann-Woesner-Str.");
+                busStation = new BusStation("Herrmann-Woesner Straße");
                 list.add(busStation);
                 busStation = new BusStation("Holzmannstraße");
                 list.add(busStation);
@@ -877,7 +877,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Danziger Straße");
                 list.add(busStation);
-                busStation = new BusStation("Dr. Geiger-Weg");
+                busStation = new BusStation("Dr. Geiger Weg");
                 list.add(busStation);
                 busStation = new BusStation("Eggendobl");
                 list.add(busStation);
@@ -891,7 +891,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Grillenöd");
                 list.add(busStation);
-                busStation = new BusStation("Herrmann-Woesner-Str.");
+                busStation = new BusStation("Herrmann-Woesner Straße");
                 list.add(busStation);
                 busStation = new BusStation("Holzmannstraße");
                 list.add(busStation);
@@ -1247,7 +1247,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("ZOB Bussteig 4");
                 list.add(busStation);
-                busStation = new BusStation("Schärdinger Str.");
+                busStation = new BusStation("Schärdinger Straße");
                 list.add(busStation);
                 busStation = new BusStation("Schanzlbrücke");
                 list.add(busStation);
@@ -1281,7 +1281,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Am Schanzl");
                 list.add(busStation);
-                busStation = new BusStation("Schärdinger Str.");
+                busStation = new BusStation("Schärdinger Straße");
                 list.add(busStation);
                 busStation = new BusStation("Mayrhof");
                 list.add(busStation);
@@ -1387,15 +1387,15 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Sulzsteg");
                 list.add(busStation);
-                busStation = new BusStation("Untere Schneckenbergstr. A");
+                busStation = new BusStation("Untere Schneckenbergstraße A");
                 list.add(busStation);
-                busStation = new BusStation("Untere Schneckenbergstr. B");
+                busStation = new BusStation("Untere Schneckenbergstraße B");
                 list.add(busStation);
-                busStation = new BusStation("Untere Schneckenbergstr. C");
+                busStation = new BusStation("Untere Schneckenbergstraße C");
                 list.add(busStation);
                 busStation = new BusStation("Wörthsstraße");
                 list.add(busStation);
-                busStation = new BusStation("Untere Schneckenbergstr.");
+                busStation = new BusStation("Untere Schneckenbergstraße");
                 list.add(busStation);
                 busStation = new BusStation("ZOB Bussteig 4");
                 list.add(busStation);
@@ -1429,15 +1429,15 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Sulzsteg");
                 list.add(busStation);
-                busStation = new BusStation("Untere Schneckenbergstr. A");
+                busStation = new BusStation("Untere Schneckenbergstraße A");
                 list.add(busStation);
-                busStation = new BusStation("Untere Schneckenbergstr. B");
+                busStation = new BusStation("Untere Schneckenbergstraße B");
                 list.add(busStation);
-                busStation = new BusStation("Untere Schneckenbergstr. C");
+                busStation = new BusStation("Untere Schneckenbergstraße C");
                 list.add(busStation);
                 busStation = new BusStation("Wörthsstraße");
                 list.add(busStation);
-                busStation = new BusStation("Untere Schneckenbergstr.");
+                busStation = new BusStation("Untere Schneckenbergstraße");
                 list.add(busStation);
                 busStation = new BusStation("ZOB Bussteig 4");
                 list.add(busStation);
@@ -1465,7 +1465,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Hauptbahnhof");
                 list.add(busStation);
-                busStation = new BusStation("Herrmann-Woesner Str.");
+                busStation = new BusStation("Herrmann-Woesner Straße");
                 list.add(busStation);
                 busStation = new BusStation("Holzheimerstraße");
                 list.add(busStation);
@@ -1509,7 +1509,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Hauptbahnhof");
                 list.add(busStation);
-                busStation = new BusStation("Herrmann-Woesner Str.");
+                busStation = new BusStation("Herrmann-Woesner Straße");
                 list.add(busStation);
                 busStation = new BusStation("Holzheimerstraße");
                 list.add(busStation);
@@ -1535,7 +1535,7 @@ public class Tools {
                 list.add(busStation);
                 break;
             case "78_Z_S":
-                busStation = new BusStation("B. von Behr Str.");
+                busStation = new BusStation("B. von Behr Straße");
                 list.add(busStation);
                 busStation = new BusStation("Buchenstraße");
                 list.add(busStation);
@@ -1545,7 +1545,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Gionstraße");
                 list.add(busStation);
-                busStation = new BusStation("Herrmann-Woesner Str.");
+                busStation = new BusStation("Herrmann-Woesner Straße");
                 list.add(busStation);
                 busStation = new BusStation("Hochlandweg");
                 list.add(busStation);
@@ -1573,7 +1573,7 @@ public class Tools {
                 list.add(busStation);
                 break;
             case "78_S_Z":
-                busStation = new BusStation("B. von Behr Str.");
+                busStation = new BusStation("B. von Behr Straße");
                 list.add(busStation);
                 busStation = new BusStation("Buchenstraße");
                 list.add(busStation);
@@ -1587,7 +1587,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Gustav-Haydn Straße");
                 list.add(busStation);
-                busStation = new BusStation("Herrmann-Woesner Str.");
+                busStation = new BusStation("Herrmann-Woesner Straße");
                 list.add(busStation);
                 busStation = new BusStation("Hochlandweg");
                 list.add(busStation);
@@ -1615,7 +1615,7 @@ public class Tools {
                 list.add(busStation);
                 break;
             case "79_Z_E":
-                busStation = new BusStation("B. von Behr Str.");
+                busStation = new BusStation("B. von Behr Straße");
                 list.add(busStation);
                 busStation = new BusStation("Eichetstraße");
                 list.add(busStation);
@@ -1631,7 +1631,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Eichendorffstraße");
                 list.add(busStation);
-                busStation = new BusStation("Emerenz-Meier Str.");
+                busStation = new BusStation("Emerenz-Meier Straße");
                 list.add(busStation);
                 busStation = new BusStation("Lautensackstraße");
                 list.add(busStation);
