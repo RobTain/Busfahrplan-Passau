@@ -3,6 +3,7 @@ package com.robtain.busfahrplan_passau;
 import android.annotation.TargetApi;
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Matrix;
@@ -92,7 +93,6 @@ public class ShowEntryActivity extends AppCompatActivity {
                      */
                     private void openView(Intent i) {
                         finish();
-                        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                         startActivity(i);
                     }
 
@@ -106,6 +106,12 @@ public class ShowEntryActivity extends AppCompatActivity {
     }
 
     private void findPicture() {
+        String path = busStop.toLowerCase().replace('ß','s') + keyword;
+        Log.e(path,path);
+
+       Resources res = getResources();
+        int id = res.getIdentifier(path, "drawable",getPackageName());
+        imageView.setImageResource(id);
     }
 
     private void zoom() {
@@ -140,6 +146,7 @@ public class ShowEntryActivity extends AppCompatActivity {
      */
     @Override
     public void onBackPressed() {
+        imageView = null;
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
