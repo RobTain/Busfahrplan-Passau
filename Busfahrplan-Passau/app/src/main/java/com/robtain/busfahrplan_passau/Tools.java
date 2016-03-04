@@ -12,6 +12,9 @@ public class Tools {
     private String codeword;
     private BusStation busStation;
 
+
+
+
     /**
      * selects a class and set a keyword (keyword is a identifier for the
      * content of submenu

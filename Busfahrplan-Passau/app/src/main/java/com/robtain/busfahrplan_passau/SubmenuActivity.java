@@ -15,21 +15,19 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
-
 import java.util.LinkedList;
-import java.util.List;
 
 /**
  * Created by RobTain on 01.03.2016.
  */
 public class SubmenuActivity extends AppCompatActivity {
-    ListView listView;
-    LinkedList busStations;
-    String keyword;
-    String busStop;
-    Tools tools;
-    BusLine busLine;
-    BusStation bs;
+    private ListView listView;
+    private LinkedList busStations;
+    private String keyword;
+    private String busStop;
+    private Tools tools;
+    private BusLine busLine;
+    private BusStation bs;
 
 
 
@@ -58,7 +56,7 @@ public class SubmenuActivity extends AppCompatActivity {
         //set NavMenu
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-//test
+
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -71,7 +69,6 @@ public class SubmenuActivity extends AppCompatActivity {
                     @Override
                     public boolean onNavigationItemSelected(MenuItem item) {
                         Tools tools = new Tools();
-                        //test
                         Intent i = new Intent(SubmenuActivity.this, tools
                                 .selectPath(item));
                         String keyword = tools.getCodeword();
@@ -88,7 +85,6 @@ public class SubmenuActivity extends AppCompatActivity {
                      */
                     private void openView(Intent i) {
                         finish();
-                        overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
                         startActivity(i);
                     }
 
