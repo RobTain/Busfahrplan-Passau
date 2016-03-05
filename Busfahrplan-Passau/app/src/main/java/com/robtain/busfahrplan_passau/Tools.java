@@ -291,29 +291,31 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Säumerweg", "1_2", "21");
                 list.add(busStation);
-                busStation = new BusStation("Scharbachweg", "1_2", "22");
+                busStation = new BusStation("Schanzlbrücke", "1_2", "22");
                 list.add(busStation);
-                busStation = new BusStation("Schönleitnerweg", "1_2", "23");
+                busStation = new BusStation("Scharbachweg", "1_2", "23");
                 list.add(busStation);
-                busStation = new BusStation("Schulzentrum / AOK", "1_2", "24");
+                busStation = new BusStation("Schönleitnerweg", "1_2", "24");
                 list.add(busStation);
-                busStation = new BusStation("St. Anton", "1_2", "25");
+                busStation = new BusStation("Schulzentrum / AOK", "1_2", "25");
                 list.add(busStation);
-                busStation = new BusStation("Sulzsteg", "1_2", "26");
+                busStation = new BusStation("St. Anton", "1_2", "26");
                 list.add(busStation);
-                busStation = new BusStation("Waldschmidtstraße", "1_2", "27");
+                busStation = new BusStation("Sulzsteg", "1_2", "27");
+                list.add(busStation);
+                busStation = new BusStation("Waldschmidtstraße", "1_2", "28");
                 list.add(busStation);
                 busStation = new BusStation("Wilhelm-Niedermayer Straße",
-                        "1_2", "28");
+                        "1_2", "29");
                 list.add(busStation);
                 busStation = new BusStation("Zahnradfabrik / Werk 1", "1_2",
-                        "29");
+                        "30");
                 list.add(busStation);
-                busStation = new BusStation("Zieglreuth", "1_2", "30");
+                busStation = new BusStation("Zieglreuth", "1_2", "31");
                 list.add(busStation);
-                busStation = new BusStation("Schanzlbrücke", "1_2", "31");
+                busStation = new BusStation("Schanzlbrücke", "1_2", "32");
                 list.add(busStation);
-                busStation = new BusStation("ZOB Bussteig 1 C", "1_2", "32");
+                busStation = new BusStation("ZOB Bussteig 1 C", "1_2", "33");
                 list.add(busStation);
                 break;
             case "1":
