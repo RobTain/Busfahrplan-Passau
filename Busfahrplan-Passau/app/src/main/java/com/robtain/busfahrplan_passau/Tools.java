@@ -313,9 +313,7 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Zieglreuth", "1_2", "31");
                 list.add(busStation);
-                busStation = new BusStation("Schanzlbrücke", "1_2", "32");
-                list.add(busStation);
-                busStation = new BusStation("ZOB Bussteig 1 C", "1_2", "33");
+                busStation = new BusStation("ZOB Bussteig 1 C", "1_2", "32");
                 list.add(busStation);
                 break;
             //test
