@@ -105,7 +105,7 @@ public class ShowEntryActivity extends AppCompatActivity {
     }
 
     private void findPicture() {
-        String path = keyword+busStop.getId();
+        String path = keyword + "_" + busStop.getId();
 
        Resources res = getResources();
         int id = res.getIdentifier(path, "drawable",getPackageName());
