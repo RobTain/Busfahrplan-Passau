@@ -488,18 +488,18 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Rathaus", "3_4", "27");
                 list.add(busStation);
-                busStation = new BusStation("Rosensteig", "3_4", "28");
+                busStation = new BusStation("Römerplatz", "3_4", "28");
                 list.add(busStation);
-                busStation = new BusStation("Römerplatz", "3_4", "29");
+                 busStation = new BusStation("Rosensteig", "3_4", "29");
                 list.add(busStation);
-                busStation = new BusStation("Schwendistraße", "3_4", "30");
+                busStation = new BusStation("Schanzlbrücke", "3_4", "30");
                 list.add(busStation);
-                busStation = new BusStation("Stadttheater", "3_4", "31");
+                busStation = new BusStation("Schwendistraße", "3_4", "31");
+                list.add(busStation);
+                busStation = new BusStation("Stadttheater", "3_4", "32");
                 list.add(busStation);
                 busStation = new BusStation("Zahnradfabrik / Werk 1", "3_4",
-                        "32");
-                list.add(busStation);
-                busStation = new BusStation("Schanzlbrücke", "3_4", "33");
+                        "33");
                 list.add(busStation);
                 busStation = new BusStation("ZOB Bussteig 1 D", "3_4", "34");
                 list.add(busStation);
