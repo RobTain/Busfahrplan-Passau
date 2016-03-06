@@ -136,7 +136,6 @@ public class ShowEntryActivity extends AppCompatActivity {
             finish();
             Intent menu = new Intent(ShowEntryActivity.this, SubmenuActivity.class);
             menu.putExtra("keyword", keyword);
-            overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
             startActivity(menu);
         }
     }

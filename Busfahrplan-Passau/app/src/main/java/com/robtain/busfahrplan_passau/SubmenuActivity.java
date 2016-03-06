@@ -155,7 +155,6 @@ public class SubmenuActivity extends AppCompatActivity {
         } else {
             finish();
             Intent menu = new Intent(SubmenuActivity.this, StartActivity.class);
-            overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
             startActivity(menu);
         }
     }
