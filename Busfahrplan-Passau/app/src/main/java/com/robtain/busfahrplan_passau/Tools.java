@@ -805,32 +805,34 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Pramöd", "5_6_P_K", "35");
                 list.add(busStation);
-                busStation = new BusStation("Ries / Rennweg", "5_6_P_K", "36");
+                busStation = new BusStation("Ries", "5_6_P_K", "36");
+                list.add(busStation);
+                busStation = new BusStation("Ries / Rennweg", "5_6_P_K", "37");
                 list.add(busStation);
                 busStation = new BusStation("Ries / Wasserturm", "5_6_P_K",
-                        "37");
+                        "38");
                 list.add(busStation);
-                busStation = new BusStation("Sailerwöhr", "5_6_P_K", "38");
+                busStation = new BusStation("Sailerwöhr", "5_6_P_K", "39");
                 list.add(busStation);
                 busStation = new BusStation("Schalding l.d.D.", "5_6_P_K",
-                        "39");
+                        "40");
                 list.add(busStation);
-                busStation = new BusStation("Schanzlbrücke", "5_6_P_K", "40");
+                busStation = new BusStation("Schanzlbrücke", "5_6_P_K", "41");
                 list.add(busStation);
-                busStation = new BusStation("Schulstraße", "5_6_P_K", "41");
+                busStation = new BusStation("Schulstraße", "5_6_P_K", "42");
                 list.add(busStation);
-                busStation = new BusStation("Simmerlingweg", "5_6_P_K", "42");
+                busStation = new BusStation("Simmerlingweg", "5_6_P_K", "43");
                 list.add(busStation);
-                busStation = new BusStation("Stelzlhof", "5_6_P_K", "43");
+                busStation = new BusStation("Stelzlhof", "5_6_P_K", "44");
                 list.add(busStation);
                 busStation = new BusStation("Westerburgerstraße", "5_6_P_K",
-                        "44");
+                        "45");
                 list.add(busStation);
-                busStation = new BusStation("Wörth", "5_6_P_K", "45");
+                busStation = new BusStation("Wörth", "5_6_P_K", "46");
                 list.add(busStation);
-                busStation = new BusStation("ZOB Bussteig 2", "2", "46");
+                busStation = new BusStation("ZOB Bussteig 2", "2", "47");
                 list.add(busStation);
-                busStation = new BusStation("Zieglstadl", "5_6_P_K", "47");
+                busStation = new BusStation("Zieglstadl", "5_6_P_K", "48");
                 list.add(busStation);
                 break;
             case "7_E_R":
