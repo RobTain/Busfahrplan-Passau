@@ -10,7 +10,6 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
@@ -95,7 +94,7 @@ public class ShowEntryActivity extends AppCompatActivity {
 
     private void findPicture() {
         String path = "p" + keyword.toLowerCase() + "_" + busStop.getId();
-        Log.e(path, path);
+        //Log.e(path, path);
 
        Resources res = getResources();
         int id = res.getIdentifier(path, "drawable",getPackageName());
