@@ -1101,42 +1101,42 @@ public class Tools {
                 busStation = new BusStation("Graf-Salm Straße",
                         "8_9_Koenig_Kohl", "9");
                 list.add(busStation);
-                busStation = new BusStation("Parkhaus Bahnhofstraße",
-                        "8_9_Koenig_Kohl", "10");
-                list.add(busStation);
                 busStation = new BusStation("Hacklstein", "8_9_Koenig_Kohl",
-                        "11");
+                        "10");
                 list.add(busStation);
                 busStation = new BusStation("Hauptbahnhof",
-                        "8_9_Koenig_Kohl", "12");
+                        "8_9_Koenig_Kohl", "11");
                 list.add(busStation);
-                busStation = new BusStation("Heining", "8_9_Koenig_Kohl", "13");
+                busStation = new BusStation("Heining", "8_9_Koenig_Kohl", "12");
                 list.add(busStation);
                 busStation = new BusStation("Hermann-Woesner Straße",
-                        "8_9_Koenig_Kohl", "14");
-                list.add(busStation);
-                busStation = new BusStation("Pater-Rupert-Mayer Straße",
-                        "8_9_Koenig_Kohl", "15");
+                        "8_9_Koenig_Kohl", "13");
                 list.add(busStation);
                 busStation = new BusStation("Hofmannsthalstraße",
-                        "8_9_Koenig_Kohl", "16");
+                        "8_9_Koenig_Kohl", "14");
                 list.add(busStation);
                 busStation = new BusStation("Holzmannstraße",
-                        "8_9_Koenig_Kohl", "17");
+                        "8_9_Koenig_Kohl", "15");
                 list.add(busStation);
-                busStation = new BusStation("Kachlet", "8_9_Koenig_Kohl", "18");
+                busStation = new BusStation("Kachlet", "8_9_Koenig_Kohl", "16");
                 list.add(busStation);
                 busStation = new BusStation("Klinikum", "8_9_Koenig_Kohl",
-                        "19");
+                        "17");
                 list.add(busStation);
                 busStation = new BusStation("Königsberger Straße",
-                        "8_9_Koenig_Kohl", "20");
+                        "8_9_Koenig_Kohl", "18");
                 list.add(busStation);
                 busStation = new BusStation("Königschalding",
-                        "8_9_Koenig_Kohl", "21");
+                        "8_9_Koenig_Kohl", "19");
                 list.add(busStation);
                 busStation = new BusStation("Neustift", "8_9_Koenig_Kohl",
-                        "22");
+                        "20");
+                list.add(busStation);
+                 busStation = new BusStation("Parkhaus Bahnhofstraße",
+                        "8_9_Koenig_Kohl", "21");
+                list.add(busStation);
+                 busStation = new BusStation("Pater-Rupert-Mayer Straße",
+                        "8_9_Koenig_Kohl", "22");
                 list.add(busStation);
                 busStation = new BusStation("Raiffeisenstraße",
                         "8_9_Koenig_Kohl", "23");
@@ -1147,41 +1147,44 @@ public class Tools {
                 busStation = new BusStation("Rittsteig", "8_9_Koenig_Kohl",
                         "25");
                 list.add(busStation);
-                busStation = new BusStation("Schönleitnerweg",
-                        "8_9_Koenig_Kohl", "26");
+                busStation = new BusStation("Rittsteigerstraße", "8_9_Koenig_Kohl",
+                        "26");
                 list.add(busStation);
-                busStation = new BusStation("Simmerlingsweg",
+                busStation = new BusStation("Schönleitnerweg",
                         "8_9_Koenig_Kohl", "27");
                 list.add(busStation);
-                busStation = new BusStation("Söldenpeterweg",
+                busStation = new BusStation("Simmerlingsweg",
                         "8_9_Koenig_Kohl", "28");
                 list.add(busStation);
+                busStation = new BusStation("Söldenpeterweg",
+                        "8_9_Koenig_Kohl", "29");
+                list.add(busStation);
                 busStation = new BusStation("Stallerweg", "8_9_Koenig_Kohl",
-                        "29");
+                        "30");
                 list.add(busStation);
                 busStation = new BusStation("Steinbachmühle",
-                        "8_9_Koenig_Kohl", "30");
-                list.add(busStation);
-                busStation = new BusStation("Stelzhamer Straße",
                         "8_9_Koenig_Kohl", "31");
                 list.add(busStation);
-                busStation = new BusStation("Universität", "8_9_Koenig_Kohl",
-                        "32");
+                busStation = new BusStation("Stelzhamer Straße",
+                        "8_9_Koenig_Kohl", "32");
                 list.add(busStation);
-                busStation = new BusStation("Vornholz", "8_9_Koenig_Kohl",
+                busStation = new BusStation("Universität", "8_9_Koenig_Kohl",
                         "33");
                 list.add(busStation);
-                busStation = new BusStation("Weinleitenweg",
-                        "8_9_Koenig_Kohl", "34");
+                busStation = new BusStation("Vornholz", "8_9_Koenig_Kohl",
+                        "34");
                 list.add(busStation);
-                busStation = new BusStation("Westendstraße",
+                busStation = new BusStation("Weinleitenweg",
                         "8_9_Koenig_Kohl", "35");
                 list.add(busStation);
+                busStation = new BusStation("Westendstraße",
+                        "8_9_Koenig_Kohl", "36");
+                list.add(busStation);
                 busStation = new BusStation("Wörthstraße", "8_9_Koenig_Kohl",
-                        "36");
+                        "37");
                 list.add(busStation);
                 busStation = new BusStation("ZOB Bussteig 2",
-                        "8_9_Koenig_Kohl", "37");
+                        "8_9_Koenig_Kohl", "28");
                 list.add(busStation);
                 break;
             case "10_Z_S":
