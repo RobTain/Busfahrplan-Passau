@@ -1026,11 +1026,11 @@ public class Tools {
                 busStation = new BusStation("Klinikum", "8_9_Kohl_Koenig",
                         "14");
                 list.add(busStation);
-                busStation = new BusStation("Kohlbruck / Erlebnisbad PEB",
+                busStation = new BusStation("Königsberger Straße",
                         "8_9_Kohl_Koenig", "15");
                 list.add(busStation);
-                busStation = new BusStation("Königsberger Straße",
-                        "8_9_Kohl_Koenig", "16");
+                busStation = new BusStation("Kohlbruck / Erlebnisbad PEB",
+                "8_9_Kohl_Koenig", "16");
                 list.add(busStation);
                 busStation = new BusStation("Oberöder Weg",
                         "8_9_Kohl_Koenig", "17");
