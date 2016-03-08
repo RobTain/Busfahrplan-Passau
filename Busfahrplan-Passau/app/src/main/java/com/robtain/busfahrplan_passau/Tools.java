@@ -1320,16 +1320,16 @@ public class Tools {
                 busStation = new BusStation("Emerenz-Meier Straße", "11_S_Z",
                         "3");
                 list.add(busStation);
+                busStation = new BusStation("Hacklstein", "11_S_Z", "4");
+                list.add(busStation);
+                busStation = new BusStation("Hauptbahnhof", "11_S_Z", "5");
+                list.add(busStation);
+                busStation = new BusStation("Heining", "11_S_Z", "6");
+                list.add(busStation);
+                busStation = new BusStation("Kachlet", "11_S_Z", "7");
+                list.add(busStation);
                 busStation = new BusStation("Parkhaus Bahnhofstraße", "11_S_Z",
                         "4");
-                list.add(busStation);
-                busStation = new BusStation("Hacklstein", "11_S_Z", "5");
-                list.add(busStation);
-                busStation = new BusStation("Hauptbahnhof", "11_S_Z", "6");
-                list.add(busStation);
-                busStation = new BusStation("Heining", "11_S_Z", "7");
-                list.add(busStation);
-                busStation = new BusStation("Kachlet", "11_S_Z", "8");
                 list.add(busStation);
                 busStation = new BusStation("Raiffeisenstraße", "11_S_Z", "9");
                 list.add(busStation);
