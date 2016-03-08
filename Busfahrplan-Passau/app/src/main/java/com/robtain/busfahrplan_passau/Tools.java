@@ -1347,7 +1347,7 @@ public class Tools {
             case "K1_L_M":
                 busStation = new BusStation("Anger", "K1_L_M", "1");
                 list.add(busStation);
-                busStation = new BusStation("Augustinerstraße", "K1_L_M", "2");
+                busStation = new BusStation("Augustinergasse", "K1_L_M", "2");
                 list.add(busStation);
                 busStation = new BusStation("Aumühlweg", "K1_L_M", "3");
                 list.add(busStation);
@@ -1385,7 +1385,7 @@ public class Tools {
             case "K1_M_L":
                 busStation = new BusStation("Anger", "K1_M_L", "1");
                 list.add(busStation);
-                busStation = new BusStation("Augustinerstraße", "K1_M_L", "2");
+                busStation = new BusStation("Augustinergasse", "K1_M_L", "2");
                 list.add(busStation);
                 busStation = new BusStation("Aumühlweg", "K1_M_L", "3");
                 list.add(busStation);
@@ -1419,7 +1419,7 @@ public class Tools {
                 list.add(busStation);
                 break;
             case "K2_S_M":
-                busStation = new BusStation("Augustinerstraße", "K2_S_M", "1");
+                busStation = new BusStation("Augustinergasse", "K2_S_M", "1");
                 list.add(busStation);
                 busStation = new BusStation("Christdobl", "K2_S_M", "1");
                 list.add(busStation);
@@ -1461,7 +1461,7 @@ public class Tools {
                 list.add(busStation);
                 break;
             case "K2_M_S":
-                busStation = new BusStation("Augustinerstraße", "K2_M_S", "1");
+                busStation = new BusStation("Augustinergasse", "K2_M_S", "1");
                 list.add(busStation);
                 busStation = new BusStation("Christdobl", "K2_M_S", "2");
                 list.add(busStation);
