@@ -313,6 +313,7 @@ public class Tools {
                 busStation = new BusStation("ZOB Bussteig 1 C", "1_2", "32");
                 list.add(busStation);
                 break;
+
             case "1":
                 busStation = new BusStation("Abteistraße", "1", "1");
                 list.add(busStation);
@@ -1819,7 +1820,7 @@ public class Tools {
             case "CB_B_R":
                 busStation = new BusStation("Bahnhofstraße", "CB_B_R", "1");
                 list.add(busStation);
-                usStation = new BusStation("Domplatz", "CB_B_R", "2");
+                busStation = new BusStation("Domplatz", "CB_B_R", "2");
                 list.add(busStation);
                 busStation = new BusStation("Hauptbahnhof", "CB_B_R", "3");
                 list.add(busStation);
