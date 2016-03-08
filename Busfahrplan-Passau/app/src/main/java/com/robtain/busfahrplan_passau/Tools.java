@@ -1686,12 +1686,15 @@ public class Tools {
                 busStation = new BusStation("Paula-Deppe Straße", "K4_S_Z",
                         "19");
                 list.add(busStation);
-                busStation = new BusStation("Schreinerholzerweg", "K4_S_Z",
+                 busStation = new BusStation("Sagmeisterweg", "K4_S_Z",
                         "20");
                 list.add(busStation);
-                busStation = new BusStation("Sperrwies", "K4_S_Z", "21");
+                busStation = new BusStation("Schreinerholzerweg", "K4_S_Z",
+                        "21");
                 list.add(busStation);
-                busStation = new BusStation("Westendstraße", "K4_S_Z", "22");
+                busStation = new BusStation("Sperrwies", "K4_S_Z", "22");
+                list.add(busStation);
+                busStation = new BusStation("Westendstraße", "K4_S_Z", "23");
                 list.add(busStation);
                 break;
             case "78_Z_S":
