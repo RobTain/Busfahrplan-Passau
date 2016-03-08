@@ -1526,16 +1526,16 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Sulzsteg", "K3_K_H", "14");
                 list.add(busStation);
-                busStation = new BusStation("Untere Schneckenbergstraße A",
+                busStation = new BusStation("Untere Schneckenbergstraße",
                         "K3_K_H", "15");
                 list.add(busStation);
-                busStation = new BusStation("Untere Schneckenbergstraße B",
+                busStation = new BusStation("Untere Schneckenbergstraße A",
                         "K3_K_H", "16");
                 list.add(busStation);
-                busStation = new BusStation("Untere Schneckenbergstraße C",
+                busStation = new BusStation("Untere Schneckenbergstraße B",
                         "K3_K_H", "17");
                 list.add(busStation);
-                busStation = new BusStation("Untere Schneckenbergstraße",
+                busStation = new BusStation("Untere Schneckenbergstraße C",
                         "K3_K_H", "18");
                 list.add(busStation);
                 busStation = new BusStation("Wörthsstraße", "K3_K_H", "19");
