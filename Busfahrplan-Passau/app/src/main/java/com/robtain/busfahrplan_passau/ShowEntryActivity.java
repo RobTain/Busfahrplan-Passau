@@ -46,7 +46,7 @@ public class ShowEntryActivity extends AppCompatActivity {
 
         //set title
         setTitle(tools.transformKeywordIntoTitle(keyword));
-
+//
 
         // NavMenu
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
