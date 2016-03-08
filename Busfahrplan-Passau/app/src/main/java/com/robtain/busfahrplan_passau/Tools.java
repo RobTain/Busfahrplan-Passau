@@ -1819,20 +1819,20 @@ public class Tools {
             case "CB_B_R":
                 busStation = new BusStation("Bahnhofstraße", "CB_B_R", "1");
                 list.add(busStation);
-                busStation = new BusStation("Parkhaus Bahnhofstraße",
-                        "CB_B_R", "2");
+                usStation = new BusStation("Domplatz", "CB_B_R", "2");
                 list.add(busStation);
                 busStation = new BusStation("Hauptbahnhof", "CB_B_R", "3");
                 list.add(busStation);
-                busStation = new BusStation("Am Schanzl", "CB_B_R", "4");
+                busStation = new BusStation("Parkhaus Bahnhofstraße",
+                        "CB_B_R", "4");
                 list.add(busStation);
-                busStation = new BusStation("Domplatz", "CB_B_R", "5");
+                busStation = new BusStation("Rathausplatz", "CB_B_R", "5");
                 list.add(busStation);
-                busStation = new BusStation("Rathausplatz", "CB_B_R", "6");
+                busStation = new BusStation("Residenzplatz", "CB_B_R", "6");
                 list.add(busStation);
-                busStation = new BusStation("Residenzplatz", "CB_B_R", "7");
+                busStation = new BusStation("Rindermarkt", "CB_B_R", "7");
                 list.add(busStation);
-                busStation = new BusStation("Rindermarkt", "CB_B_R", "8");
+                busStation = new BusStation("Am Schanzl", "CB_B_R", "8");
                 list.add(busStation);
                 busStation = new BusStation("Am Schanzlturm", "CB_B_R", "9");
                 list.add(busStation);
