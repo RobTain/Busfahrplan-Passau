@@ -1398,25 +1398,28 @@ public class Tools {
                 busStation = new BusStation("Mariahilf-Grenzstation",
                         "K1_M_L", "7");
                 list.add(busStation);
-                busStation = new BusStation("Mozartstraße", "K1_M_L", "8");
+                busStation = new BusStation("Mayrhof", "K1_M_L", "8");
                 list.add(busStation);
-                busStation = new BusStation("Muffatstraße", "K1_M_L", "9");
+                busStation = new BusStation("Mozartstraße", "K1_M_L", "9");
                 list.add(busStation);
-                busStation = new BusStation("Schulstraße", "K1_M_L", "10");
+                busStation = new BusStation("Muffatstraße", "K1_M_L", "10");
                 list.add(busStation);
-                busStation = new BusStation("Stadttheater", "K1_M_L", "11");
-                list.add(busStation);
-                busStation = new BusStation("Schmiedgasse", "K1_M_L", "12");
-                list.add(busStation);
-                busStation = new BusStation("ZOB Bussteig 4", "K1_M_L", "13");
-                list.add(busStation);
-                busStation = new BusStation("Am Schanzl", "K1_M_L", "14");
+                busStation = new BusStation("Am Schanzl", "K1_M_L", "11");
                 list.add(busStation);
                 busStation = new BusStation("Schärdinger Straße", "K1_M_L",
-                        "15");
+                        "12");
                 list.add(busStation);
-                busStation = new BusStation("Mayrhof", "K1_M_L", "16");
+                busStation = new BusStation("Schmiedgasse", "K1_M_L", "13");
                 list.add(busStation);
+                busStation = new BusStation("Schulstraße", "K1_M_L", "14");
+                list.add(busStation);
+                busStation = new BusStation("Stadttheater", "K1_M_L", "15");
+                list.add(busStation);
+                
+                busStation = new BusStation("ZOB Bussteig 4", "K1_M_L", "16");
+                list.add(busStation);
+                
+                
                 break;
             case "K2_S_M":
                 busStation = new BusStation("Augustinergasse", "K2_S_M", "1");
