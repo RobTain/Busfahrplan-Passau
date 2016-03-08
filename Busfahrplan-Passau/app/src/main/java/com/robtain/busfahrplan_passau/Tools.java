@@ -1710,33 +1710,35 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Gionstraße", "78_Z_S", "5");
                 list.add(busStation);
+                busStation = new BusStation("G.-Haydn Straße", "78_Z_S", "6");
+                list.add(busStation);
                 busStation = new BusStation("Herrmann-Woesner Straße",
-                        "78_Z_S", "6");
+                        "78_Z_S", "7");
                 list.add(busStation);
-                busStation = new BusStation("Hochlandweg", "78_Z_S", "7");
+                busStation = new BusStation("Hochlandweg", "78_Z_S", "8");
                 list.add(busStation);
-                busStation = new BusStation("Hoffeldweg", "78_Z_S", "8");
+                busStation = new BusStation("Hoffeldweg", "78_Z_S", "9");
                 list.add(busStation);
-                busStation = new BusStation("Neustift", "78_Z_S", "9");
+                busStation = new BusStation("Neustift", "78_Z_S", "10");
                 list.add(busStation);
-                busStation = new BusStation("Oberöder Weg", "78_Z_S", "10");
+                busStation = new BusStation("Oberöder Weg", "78_Z_S", "11");
                 list.add(busStation);
-                busStation = new BusStation("Prügelweg", "78_Z_S", "11");
+                busStation = new BusStation("Prügelweg", "78_Z_S", "12");
                 list.add(busStation);
-                busStation = new BusStation("Reuthinger Weg", "78_Z_S", "12");
+                busStation = new BusStation("Reuthinger Weg", "78_Z_S", "13");
                 list.add(busStation);
-                busStation = new BusStation("Richterstraße", "78_Z_S", "13");
+                busStation = new BusStation("Richterstraße", "78_Z_S", "14");
                 list.add(busStation);
-                busStation = new BusStation("Rittsteig", "78_Z_S", "14");
+                busStation = new BusStation("Rittsteig", "78_Z_S", "15");
                 list.add(busStation);
                 busStation = new BusStation("Rittsteigerstraße", "78_Z_S",
-                        "15");
+                        "16");
                 list.add(busStation);
-                busStation = new BusStation("Schalding r.d.D.", "78_Z_S", "16");
+                busStation = new BusStation("Schalding r.d.D.", "78_Z_S", "17");
                 list.add(busStation);
-                busStation = new BusStation("Stallerweg", "78_Z_S", "17");
+                busStation = new BusStation("Stallerweg", "78_Z_S", "18");
                 list.add(busStation);
-                busStation = new BusStation("Winzerleite", "78_Z_S", "18");
+                busStation = new BusStation("Winzerleite", "78_Z_S", "19");
                 list.add(busStation);
 
                 break;
