@@ -2,6 +2,7 @@ package com.robtain.busfahrplan_passau;
 
 
 import android.annotation.TargetApi;
+import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -22,15 +23,15 @@ import android.widget.ImageView;
 public class StartActivity extends AppCompatActivity {
     private Tools tools;
     private ImageView imageView;
-
-
-
+    private boolean zoomout = true;
+    private Context context;
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.start);
+        context = this;
 
         //set color statusbar
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -70,9 +71,6 @@ public class StartActivity extends AppCompatActivity {
                      */
                     private void openView(Intent i) {
                         finish();
-                        //TODO search for better animation!!!
-                        overridePendingTransition(R.anim.slide_in, R.anim
-                                .slide_out);
                         startActivity(i);
                     }
                 });
@@ -80,31 +78,42 @@ public class StartActivity extends AppCompatActivity {
         imageView.setImageDrawable(getResources().getDrawable(R.drawable
                 .line_plan));
 
-        //set Zoom
         zoom();
     }
 
     private void zoom() {
-
-        final Animation zoomin = AnimationUtils.loadAnimation(this, R.anim.zoomin);
-        final Animation zoomout = AnimationUtils.loadAnimation(this, R.anim.zoomout);
-        imageView.setAnimation(zoomin);
+        final Animation zoomout = AnimationUtils.loadAnimation(this, R.anim
+                .initialzoom);
         imageView.setAnimation(zoomout);
-        //TODO better zoom in and out (set pivot!!!)
         imageView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
+                v.startAnimation(zoomout);
+                imageView.setAnimation(null);
                 switch (event.getAction() & MotionEvent.ACTION_MASK) {
-                    case MotionEvent.ACTION_UP:
-                        v.startAnimation(zoomout);
-                        break;
                     case MotionEvent.ACTION_DOWN:
-                        v.startAnimation(zoomin);
+                        float x = event.getX();
+                        float y = event.getY();
+                        zoomhelper(x, y);
                         break;
                 }
                 return true;
             }
         });
+    }
+
+    private void zoomhelper(float x, float y) {
+        if (zoomout) {
+            zoomout = !zoomout;
+            imageView.setScaleX(3);
+            imageView.setScaleY(3);
+            imageView.setPivotX(x);
+            imageView.setPivotY(y);
+        } else {
+            zoomout = !zoomout;
+            imageView.setScaleX(1);
+            imageView.setScaleY(1);
+        }
     }
 
 

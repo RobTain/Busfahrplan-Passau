@@ -24,8 +24,8 @@ public class ShowEntryActivity extends AppCompatActivity {
     private String keyword;
     private BusStation busStop;
     private ImageView imageView;
-    private int currentPage = 0;
     private Tools tools;
+    private boolean zoomout = true;
 
 
     @Override
@@ -82,9 +82,8 @@ public class ShowEntryActivity extends AppCompatActivity {
                         finish();
                         startActivity(i);
                     }
-
-
                 });
+
         imageView = (ImageView) findViewById(R.id.searchResult);
         //find Pic
         findPicture();
@@ -102,20 +101,19 @@ public class ShowEntryActivity extends AppCompatActivity {
     }
 
     private void zoom() {
-        final Animation zoomin = AnimationUtils.loadAnimation(this, R.anim.zoomin);
-        final Animation zoomout = AnimationUtils.loadAnimation(this, R.anim.zoomout);
-        imageView.setAnimation(zoomin);
+        final Animation zoomout = AnimationUtils.loadAnimation(this, R.anim
+                .initialzoom);
         imageView.setAnimation(zoomout);
-        //TODO better zoom in and out (set pivot!!!)
         imageView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
+                v.startAnimation(zoomout);
+                imageView.setAnimation(null);
                 switch (event.getAction() & MotionEvent.ACTION_MASK) {
-                    case MotionEvent.ACTION_UP:
-                        v.startAnimation(zoomout);
-                        break;
                     case MotionEvent.ACTION_DOWN:
-                        v.startAnimation(zoomin);
+                        float x = event.getX();
+                        float y = event.getY();
+                        zoomhelper(x, y);
                         break;
                 }
                 return true;
@@ -123,6 +121,19 @@ public class ShowEntryActivity extends AppCompatActivity {
         });
     }
 
+    private void zoomhelper(float x, float y) {
+        if (zoomout) {
+            zoomout = !zoomout;
+            imageView.setScaleX(2);
+            imageView.setScaleY(2);
+            imageView.setPivotX(x);
+            imageView.setPivotY(y);
+        } else {
+            zoomout = !zoomout;
+            imageView.setScaleX(1);
+            imageView.setScaleY(1);
+        }
+    }
 
     /**
      * return to submenu

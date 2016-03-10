@@ -1842,7 +1842,7 @@ public class Tools {
                 busStation = new BusStation("ZOB Bussteig 5", "CB_B_R", "10");
                 list.add(busStation);
                 break;
-            //
+
             case "CB_R_B":
                 busStation = new BusStation("Bahnhofstraße", "CB_R_B", "1");
                 list.add(busStation);
