@@ -49,6 +49,7 @@ public class ShowEntryActivity extends AppCompatActivity {
                 .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
                 .build();
 
+        //
         // Start loading the ad in the background.
         mAdView.loadAd(adRequest);
 
