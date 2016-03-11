@@ -1184,7 +1184,7 @@ public class Tools {
                         "37");
                 list.add(busStation);
                 busStation = new BusStation("ZOB Bussteig 2",
-                        "8_9_Koenig_Kohl", "28");
+                        "8_9_Koenig_Kohl", "38");
                 list.add(busStation);
                 break;
             case "10_Z_S":
@@ -1329,7 +1329,7 @@ public class Tools {
                 busStation = new BusStation("Kachlet", "11_S_Z", "7");
                 list.add(busStation);
                 busStation = new BusStation("Parkhaus Bahnhofstraße", "11_S_Z",
-                        "4");
+                        "8");
                 list.add(busStation);
                 busStation = new BusStation("Raiffeisenstraße", "11_S_Z", "9");
                 list.add(busStation);
