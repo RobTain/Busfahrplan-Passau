@@ -17,8 +17,7 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdView;
+
 
 /**
  * Created by RobTain on 29.01.2016.
@@ -29,7 +28,7 @@ public class ShowEntryActivity extends AppCompatActivity {
     private ImageView imageView;
     private Tools tools;
     private boolean zoomout = true;
-    private AdView mAdView;
+
 
 
     @Override
@@ -37,21 +36,6 @@ public class ShowEntryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.searchresult);
         tools = new Tools();
-
-        // Gets the ad view defined in layout/ad_fragment.xml with ad unit ID set in
-        // values/strings.xml.
-        mAdView = (AdView) findViewById(R.id.ad_view);
-
-        // Create an ad request. Check your logcat output for the hashed device ID to
-        // get test ads on a physical device. e.g.
-        // "Use AdRequest.Builder.addTestDevice("ABCDEF012345") to get test ads on this device."
-        AdRequest adRequest = new AdRequest.Builder()
-                .addTestDevice(AdRequest.DEVICE_ID_EMULATOR)
-                .build();
-
-        //
-        // Start loading the ad in the background.
-        mAdView.loadAd(adRequest);
 
         //get keyword
         Intent i = getIntent();
