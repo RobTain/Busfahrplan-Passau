@@ -1184,7 +1184,7 @@ public class Tools {
                         "37");
                 list.add(busStation);
                 busStation = new BusStation("ZOB Bussteig 2",
-                        "8_9_Koenig_Kohl", "28");
+                        "8_9_Koenig_Kohl", "38");
                 list.add(busStation);
                 break;
             case "10_Z_S":
