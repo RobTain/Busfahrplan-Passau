@@ -36,6 +36,11 @@
                   android:windowSoftInputMode="stateHidden"
                   android:theme="@style/AppTheme.NoActionBar"
                   android:screenOrientation="portrait"/>
+        <activity android:name=".DonationActivity"
+                  android:label="@string/donationTitleBar"
+                  android:windowSoftInputMode="stateHidden"
+                  android:theme="@style/AppTheme.NoActionBar"
+                  android:screenOrientation="portrait"/>
     </application>
 
 </manifest>

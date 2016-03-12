@@ -113,6 +113,9 @@ public class Tools {
                 case R.id.nav_CB_Roemerplatz_Bahnhofstr:
                     codeword = "CB_R_B";
                     return SubmenuActivity.class;
+                case R.id.nav_donation:
+                    return DonationActivity.class;
+                //TODO Rate App
                 default:
                     return StartActivity.class;
             }

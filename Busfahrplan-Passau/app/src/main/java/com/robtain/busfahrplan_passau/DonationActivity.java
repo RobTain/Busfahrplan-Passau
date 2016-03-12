@@ -1,9 +1,4 @@
 package com.robtain.busfahrplan_passau;
-//TODO Icon machen
-//TODO Icon in Nav setzen
-//TODO App bewerten auf Link setzen
-//TODO Zoomfunktion
-//TODO Spendenfunktion
 
 import android.content.Intent;
 import android.os.Build;
@@ -14,22 +9,19 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.text.Html;
+import android.text.method.LinkMovementMethod;
 import android.view.MenuItem;
-import android.view.MotionEvent;
-import android.view.View;
-import android.view.animation.Animation;
-import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
+import android.widget.TextView;
 
+/**
+ * Created by RobTain on 12.03.2016.
+ */
+public class DonationActivity extends AppCompatActivity {
 
-public class StartActivity extends AppCompatActivity {
-    private ImageView imageView;
-    private boolean zoomout = true;
-
-    @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.start);
+        setContentView(R.layout.donation);
 
         //set color statusbar
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -53,7 +45,7 @@ public class StartActivity extends AppCompatActivity {
                     public boolean onNavigationItemSelected(MenuItem item) {
                         Tools tools = new Tools();
                         //test
-                        Intent i = new Intent(StartActivity.this, tools
+                        Intent i = new Intent(DonationActivity.this, tools
                                 .selectPath(item));
                         String keyword = tools.getCodeword();
                         i.putExtra("keyword", keyword);
@@ -72,60 +64,34 @@ public class StartActivity extends AppCompatActivity {
                         startActivity(i);
                     }
                 });
-
-        imageView = (ImageView) findViewById(R.id.lineplan);
-        imageView.setImageDrawable(getResources().getDrawable(R.drawable
-                .line_plan));
-        zoom();
-    }
-
-    private void zoom() {
-        final Animation zoomout = AnimationUtils.loadAnimation(this, R.anim
-                .initialzoom);
-        imageView.setAnimation(zoomout);
-        imageView.setOnTouchListener(new View.OnTouchListener() {
+        TextView textView = (TextView) findViewById(R.id.donationText);
 
 
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                v.startAnimation(zoomout);
-                imageView.setAnimation(null);
-                switch (event.getAction() & MotionEvent.ACTION_MASK) {
-                    case MotionEvent.ACTION_DOWN:
-                        float x = event.getX();
-                        float y = event.getY();
-                        zoomhelper(x, y);
-                        break;
-                }
-                return true;
-            }
-        });
-    }
-
-    private void zoomhelper(float x, float y) {
-        if (zoomout) {
-            zoomout = !zoomout;
-            imageView.setScaleX(3);
-            imageView.setScaleY(3);
-            imageView.setPivotX(x);
-            imageView.setPivotY(y);
-        } else {
-            zoomout = !zoomout;
-            imageView.setScaleX(1);
-            imageView.setScaleY(1);
-        }
-    }
-
-    /**
-     * Back key will end application
-     */
-    @Override
-    public void onBackPressed() {
-        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
-        if (drawer.isDrawerOpen(GravityCompat.START)) {
-            drawer.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
+        String value = "<html> <p>Die App ist völlig gratis, es gibt keine " +
+                "Werbung oder versteckten Videos, um Geldeinnahmen zu generieren. " +
+                "Dadurch, dass die App keinerlei Rechte braucht und somit " +
+                "komplett Offline genutzt werden kann, gibt es auch keine " +
+                "Möglichkeit, Tricks einzubauen. Das ist zum jetzigen Zeitpunkt " +
+                "so und es wird auch immer so bleiben.</p>" +
+                "<p>Dennoch hat die App im Erstellungsprozess Geld und Nerven" +
+                " gekostet. Insgesamt habe ich 55 Arbeitsstunden in diese App" +
+                " investiert. Berechnet man dies mit einem sehr niedrigen " +
+                "Stundenlohn (12 Euro), so wären es 660 Euro. Weiterhin " +
+                "sollte man die Stromkosten in der heutigen Zeit nicht " +
+                "außer Acht lassen. Dementsprechend käme die App zirka " +
+                "auf 700 Euro. Letztendlich fehlt nur noch die Gebühr von 25 " +
+                "$, damit man überhaupt auf dem Play Store Apps " +
+                "veröffentlichen kann. </p>" +
+                "<p>Lange Rede, kurzer Sinn, die App kostet euch nichts, " +
+                "aber ich würde mich über jede einzelne Spende freuen.</p>" +
+                "<p><a href=\"https://www.paypal" +
+                ".com/cgi-bin/webscr?cmd=_donations&business=ragingrobert" +
+                "2508%40gmail%2ecom&lc=DE&item_name=Busfahrplan%2dPassau&no_" +
+                "note=1&no_shipping=1&currency_code=EUR&bn=PP%2dDonationsBF%" +
+                "3abtn_donateCC_LG%2" +
+                "egif%3aNonHosted\">Spendenlink</a> </html>";
+        TextView text = (TextView) findViewById(R.id.donationText);
+        text.setText(Html.fromHtml(value));
+        text.setMovementMethod(LinkMovementMethod.getInstance());
     }
 }
