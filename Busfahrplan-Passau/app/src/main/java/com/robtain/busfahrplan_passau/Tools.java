@@ -240,7 +240,11 @@ public class Tools {
         return title;
     }
 
-
+    /**
+     * create all buslines and collect it into a list
+     * @param s codeword
+     * @return List with busStations
+     */
     public LinkedList findBusLine(String s) {
         LinkedList<BusStation> list = new LinkedList<>();
         switch (s) {

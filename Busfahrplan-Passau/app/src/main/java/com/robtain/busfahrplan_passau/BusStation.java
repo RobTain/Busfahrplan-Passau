@@ -14,9 +14,6 @@ public class BusStation implements Serializable {
     public String getTitle() {
         return title;
     }
-    public String getLine() {
-        return line;
-    }
     public String getId() {
         return id;
     }

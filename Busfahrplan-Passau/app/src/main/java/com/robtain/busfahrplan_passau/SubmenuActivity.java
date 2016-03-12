@@ -28,8 +28,6 @@ public class SubmenuActivity extends AppCompatActivity {
     private BusLine busLine;
     private BusStation bs;
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

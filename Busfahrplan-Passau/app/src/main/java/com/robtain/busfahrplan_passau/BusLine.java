@@ -8,14 +8,9 @@ import java.util.LinkedList;
 public class BusLine {
     Tools tools;
     LinkedList list = new LinkedList();
-
-
     public LinkedList getBusLine(String keyword) {
         tools = new Tools();
         list = tools.findBusLine(keyword);
-
-
-
         return list;
     }
 }
