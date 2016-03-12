@@ -1,7 +1,6 @@
 package com.robtain.busfahrplan_passau;
 //TODO Icon machen
 //TODO Icon in Nav setzen
-//TODO Submenu schrift fett
 //TODO App bewerten auf Link setzen
 //TODO Zoomfunktion
 
@@ -33,7 +32,6 @@ public class StartActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.start);
-
 
         //set color statusbar
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -76,10 +74,10 @@ public class StartActivity extends AppCompatActivity {
                         startActivity(i);
                     }
                 });
+
         imageView = (ImageView) findViewById(R.id.lineplan);
         imageView.setImageDrawable(getResources().getDrawable(R.drawable
                 .line_plan));
-
         zoom();
     }
 
@@ -88,6 +86,8 @@ public class StartActivity extends AppCompatActivity {
                 .initialzoom);
         imageView.setAnimation(zoomout);
         imageView.setOnTouchListener(new View.OnTouchListener() {
+
+
             @Override
             public boolean onTouch(View v, MotionEvent event) {
                 v.startAnimation(zoomout);
