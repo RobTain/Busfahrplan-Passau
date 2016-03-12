@@ -6,7 +6,6 @@ package com.robtain.busfahrplan_passau;
 //TODO Zoomfunktion
 
 import android.annotation.TargetApi;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Build;
 import android.os.Bundle;
@@ -25,17 +24,16 @@ import android.widget.ImageView;
 
 
 public class StartActivity extends AppCompatActivity {
-    private Tools tools;
     private ImageView imageView;
     private boolean zoomout = true;
-    private Context context;
+
 
     @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.start);
-        context = this;
+
 
         //set color statusbar
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -119,7 +117,6 @@ public class StartActivity extends AppCompatActivity {
             imageView.setScaleY(1);
         }
     }
-
 
     /**
      * Back key will end application

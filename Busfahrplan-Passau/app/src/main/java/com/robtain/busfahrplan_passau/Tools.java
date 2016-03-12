@@ -4,7 +4,7 @@ import android.content.Intent;
 import android.view.MenuItem;
 
 import java.util.LinkedList;
-
+//
 /**
  * provides methodes to reduce code duplication or set general settings
  */

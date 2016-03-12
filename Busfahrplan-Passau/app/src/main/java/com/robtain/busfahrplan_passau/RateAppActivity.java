@@ -53,7 +53,6 @@ public class RateAppActivity extends AppCompatActivity {
         } else {
             finish();
             Intent menu = new Intent(RateAppActivity.this, StartActivity.class);
-            //overridePendingTransition(R.anim.slide_in, R.anim.slide_out);
             startActivity(menu);
 
         }

@@ -24,7 +24,6 @@ public class SubmenuActivity extends AppCompatActivity {
     private ListView listView;
     private LinkedList busStations;
     private String keyword;
-    private String busStop;
     private Tools tools;
     private BusLine busLine;
     private BusStation bs;
