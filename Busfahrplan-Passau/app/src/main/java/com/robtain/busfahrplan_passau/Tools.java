@@ -500,8 +500,6 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("ZOB Bussteig 1 D", "3_4", "34");
                 list.add(busStation);
-
-
                 break;
             case "3":
                 busStation = new BusStation("Achleiten", "3", "1");
@@ -983,8 +981,6 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("ZOB Bussteig 2", "7_R_E", "31");
                 list.add(busStation);
-
-
                 break;
             case "8_9_Kohl_Koenig":
                 busStation = new BusStation("Apfelkoch", "8_9_Kohl_Koenig", "1");
@@ -1418,8 +1414,6 @@ public class Tools {
                 
                 busStation = new BusStation("ZOB Bussteig 4", "K1_M_L", "16");
                 list.add(busStation);
-                
-                
                 break;
             case "K2_S_M":
                 busStation = new BusStation("Augustinergasse", "K2_S_M", "1");
@@ -1740,7 +1734,6 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("Winzerleite", "78_Z_S", "19");
                 list.add(busStation);
-
                 break;
             case "78_S_Z":
                 busStation = new BusStation("B. von Behr Straße", "78_S_Z", "1");
@@ -1842,7 +1835,6 @@ public class Tools {
                 busStation = new BusStation("ZOB Bussteig 5", "CB_B_R", "10");
                 list.add(busStation);
                 break;
-
             case "CB_R_B":
                 busStation = new BusStation("Bahnhofstraße", "CB_R_B", "1");
                 list.add(busStation);
@@ -1860,7 +1852,6 @@ public class Tools {
                 list.add(busStation);
                 busStation = new BusStation("ZOB Bussteig 5", "CB_R_B", "8");
                 list.add(busStation);
-
                 break;
         }
         return list;
