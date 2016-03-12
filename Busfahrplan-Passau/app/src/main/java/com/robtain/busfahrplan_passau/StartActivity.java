@@ -1,5 +1,9 @@
 package com.robtain.busfahrplan_passau;
-
+//TODO Icon machen
+//TODO Icon in Nav setzen
+//TODO Submenu schrift fett
+//TODO App bewerten auf Link setzen
+//TODO Zoomfunktion
 
 import android.annotation.TargetApi;
 import android.content.Context;
