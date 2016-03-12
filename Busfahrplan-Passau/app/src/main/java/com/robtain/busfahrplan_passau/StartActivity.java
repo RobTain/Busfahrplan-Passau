@@ -25,11 +25,13 @@ import android.widget.ImageView;
 public class StartActivity extends AppCompatActivity {
     private ImageView imageView;
     private boolean zoomout = true;
+    private View view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.start);
+        view = this.findViewById(android.R.id.content);
 
         //set color statusbar
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -80,9 +82,12 @@ public class StartActivity extends AppCompatActivity {
     }
 
     private void zoom() {
+        //set hardware layer for animation performance
+        view.setLayerType(View.LAYER_TYPE_HARDWARE, null);
         final Animation zoomout = AnimationUtils.loadAnimation(this, R.anim
                 .initialzoom);
         imageView.setAnimation(zoomout);
+        view.setLayerType(View.LAYER_TYPE_NONE, null);
         imageView.setOnTouchListener(new View.OnTouchListener() {
 
 

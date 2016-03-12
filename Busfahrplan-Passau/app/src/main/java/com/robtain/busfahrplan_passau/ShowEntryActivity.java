@@ -28,13 +28,13 @@ public class ShowEntryActivity extends AppCompatActivity {
     private ImageView imageView;
     private Tools tools;
     private boolean zoomout = true;
-
-
+    private View view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.searchresult);
+        view = this.findViewById(android.R.id.content);
         tools = new Tools();
 
         //get keyword
@@ -49,7 +49,6 @@ public class ShowEntryActivity extends AppCompatActivity {
 
         //set title
         setTitle(tools.transformKeywordIntoTitle(keyword));
-//
 
         // NavMenu
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -104,9 +103,12 @@ public class ShowEntryActivity extends AppCompatActivity {
     }
 
     private void zoom() {
+        //set hardware layer for animation performance
+        view.setLayerType(View.LAYER_TYPE_HARDWARE, null);
         final Animation zoomout = AnimationUtils.loadAnimation(this, R.anim
                 .initialzoom);
         imageView.setAnimation(zoomout);
+        view.setLayerType(View.LAYER_TYPE_NONE, null);
         imageView.setOnTouchListener(new View.OnTouchListener() {
             @Override
             public boolean onTouch(View v, MotionEvent event) {
