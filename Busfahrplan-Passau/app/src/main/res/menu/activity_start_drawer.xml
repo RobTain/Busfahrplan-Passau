@@ -135,9 +135,14 @@
     <item android:title="Sonstiges">
         <menu>
             <item
-                android:id="@+id/rateNavMenu"
+                android:id="@+id/nav_rating"
                 android:icon="@android:drawable/btn_star_big_on"
                 android:title="App bewerten" />
+            <item
+                android:id="@+id/nav_donation"
+                android:icon="@android:drawable/ic_lock_idle_charging"
+                android:title="Spende">
+            </item>
         </menu>
     </item>
 </menu>

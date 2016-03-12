@@ -66,7 +66,7 @@ public class DonationActivity extends AppCompatActivity {
                 });
         TextView textView = (TextView) findViewById(R.id.donationText);
 
-
+//
         String value = "<html> <p>Die App ist völlig gratis, es gibt keine " +
                 "Werbung oder versteckten Videos, um Geldeinnahmen zu generieren. " +
                 "Dadurch, dass die App keinerlei Rechte braucht und somit " +
