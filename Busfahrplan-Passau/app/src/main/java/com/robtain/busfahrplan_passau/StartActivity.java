@@ -1,6 +1,8 @@
 package com.robtain.busfahrplan_passau;
 //TODO App bewerten auf Link setzen
 //TODO Zoomfunktion
+//TODO Icon Donation CHECK (check Nav, evtl. mit Roboto besser)
+//TODO Favoriten erstellen
 
 import android.content.Intent;
 import android.os.Build;

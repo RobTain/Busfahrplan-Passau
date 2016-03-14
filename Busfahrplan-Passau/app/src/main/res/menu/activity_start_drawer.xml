@@ -140,7 +140,7 @@
                 android:title="App bewerten" />
             <item
                 android:id="@+id/nav_donation"
-                android:icon="@android:drawable/ic_lock_idle_charging"
+                android:icon="@drawable/donation"
                 android:title="Spende">
             </item>
         </menu>
