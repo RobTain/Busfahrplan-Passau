@@ -4,18 +4,15 @@ package com.robtain.busfahrplan_passau;
 //TODO Favoriten anzeigen auf Favoritenseite
 
 import android.content.Intent;
-import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
 import android.support.design.widget.NavigationView;
-import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 import android.view.MotionEvent;
 import android.view.View;
@@ -48,10 +45,6 @@ public class StartActivity extends AppCompatActivity {
 
         // set toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        // set icon favourites
-        Drawable drawable = ContextCompat.getDrawable(getApplicationContext()
-                , R.drawable.favourites);
-        toolbar.setOverflowIcon(drawable);
         setSupportActionBar(toolbar);
 
         //set NavMenu
@@ -175,29 +168,6 @@ public class StartActivity extends AppCompatActivity {
         }
     }
 
-    /**
-     * creates OptionMenu on the toolbar
-     * @param menu
-     * @return
-     */
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_right, menu);
-        return true;
-    }
 
-
-    /**
-     * handles onclick on MenuItem (OptionMenu)
-     * @param item
-     */
-   public void startFavouritesIntent(MenuItem item) {
-       tools = new Tools();
-       Intent i = new Intent(StartActivity.this, FavouritenActivity.class);
-       finish();
-       startActivity(i);
-
-    }
 
 }

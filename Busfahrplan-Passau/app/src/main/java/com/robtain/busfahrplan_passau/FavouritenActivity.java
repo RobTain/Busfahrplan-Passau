@@ -140,7 +140,6 @@ public class FavouritenActivity extends AppCompatActivity {
                 busStops[i] = second;
             }
 
-
             // get busstation objects
             fav = new LinkedList<BusStation>();
             LinkedList tmp;
