@@ -1,7 +1,7 @@
 package com.robtain.busfahrplan_passau;
 //TODO App bewerten auf Link setzen
 //TODO Zoomfunktion
-//TODO Favoriten anzeigen auf Favoritenseite
+
 
 import android.content.Intent;
 import android.os.Build;
