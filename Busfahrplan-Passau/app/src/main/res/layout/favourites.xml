@@ -8,12 +8,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:fitsSystemWindows="true"
-    tools:openDrawer="start">
-    <!--
-    set a background
-    android:background=""
-     -->
-
+    tools:openDrawer="start"
+    >
 
     <include
         layout="@layout/app_bar_start"
@@ -21,29 +17,23 @@
         android:layout_height="match_parent" />
 
 
-
-
-    <FrameLayout
+    <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:paddingLeft="@dimen/fab_margin"
         android:paddingRight="@dimen/fab_margin"
-       >
+        android:paddingTop="@dimen/fab_margin">
 
-        <LinearLayout
+        <ListView
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:gravity="center"
-            android:orientation="vertical"
-            android:layout_marginTop="?android:attr/actionBarSize">
+            android:id="@+id/favouritesList"
+            android:layout_marginTop="?attr/actionBarSize">
 
-            <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:id="@+id/lineplan"
-                />
-        </LinearLayout>
-    </FrameLayout>
+        </ListView>
+
+
+    </RelativeLayout>
 
 
     <android.support.design.widget.NavigationView
@@ -53,9 +43,7 @@
         android:layout_gravity="start"
         android:fitsSystemWindows="true"
         app:headerLayout="@layout/nav_header_start"
-        app:menu="@menu/activity_start_drawer" >
-
-    </android.support.design.widget.NavigationView>
+        app:menu="@menu/activity_start_drawer" />
 
 </android.support.v4.widget.DrawerLayout>
 

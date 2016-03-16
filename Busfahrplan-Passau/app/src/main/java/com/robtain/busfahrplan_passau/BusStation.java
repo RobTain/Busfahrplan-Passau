@@ -18,6 +18,10 @@ public class BusStation implements Serializable {
         return id;
     }
 
+    public String getLine() {
+        return line;
+    }
+
     public BusStation(String title, String line, String id) {
         this.title = title;
         this.line = line;

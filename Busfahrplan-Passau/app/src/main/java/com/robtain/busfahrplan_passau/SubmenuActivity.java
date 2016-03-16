@@ -1,14 +1,17 @@
 package com.robtain.busfahrplan_passau;
 
 import android.content.Intent;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
+import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -52,6 +55,10 @@ public class SubmenuActivity extends AppCompatActivity {
 
         //set NavMenu
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        // set icon favourites
+        Drawable drawable = ContextCompat.getDrawable(getApplicationContext()
+                , R.drawable.favourites);
+        toolbar.setOverflowIcon(drawable);
         setSupportActionBar(toolbar);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
@@ -108,8 +115,8 @@ public class SubmenuActivity extends AppCompatActivity {
                 R.layout.submenu_style, android.R.id.text1, values);
 
 
-       // Assign adapter to ListView
-       listView.setAdapter(adapter);
+        // Assign adapter to ListView
+        listView.setAdapter(adapter);
 
         // ListView Item Click Listener
         listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
@@ -155,5 +162,30 @@ public class SubmenuActivity extends AppCompatActivity {
             startActivity(menu);
         }
     }
-}
 
+
+    /**
+     * creates OptionMenu on the toolbar
+     * @param menu
+     * @return
+     */
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.menu_right, menu);
+        return true;
+    }
+
+
+    /**
+     * handles onclick on MenuItem (OptionMenu)
+     * @param item
+     */
+    public void startFavouritesIntent(MenuItem item) {
+        tools = new Tools();
+        Intent i = new Intent(SubmenuActivity.this, FavouritenActivity.class);
+        finish();
+        startActivity(i);
+
+    }
+}

@@ -58,5 +58,11 @@
     <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
     <string name="nav_title_nav">Stadtwerke Passau - Busfahrpläne</string>
     <string name="donationTitleBar">Busfahrplan-Passau Spende</string>
+    <string name="menu_right_favorites">Zeige Favoriten</string>
+    <string name="Favourites_Title">Favoriten</string>
+    <string name="Favourites_No_Favourites">Bitte wählen Sie zuerst ein
+    paar Favoriten aus!</string>
+    <string name="Favourites_add">Favorisieren</string>
+    <string name="Favourite_delete">Favorit entfernen</string>
 
 </resources>

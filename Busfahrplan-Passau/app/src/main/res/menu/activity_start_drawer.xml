@@ -2,6 +2,23 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
+    <item android:title="Generelles">
+        <menu>
+            <item
+                android:id="@+id/nav_fav"
+                android:icon="@drawable/favourites_added"
+                android:title="Favorisierte Buslinien" ></item>
+            <item
+                android:id="@+id/nav_rating"
+                android:icon="@android:drawable/btn_star_big_on"
+                android:title="App bewerten" />
+            <item
+                android:id="@+id/nav_donation"
+                android:icon="@drawable/donation"
+                android:title="Spende">
+            </item>
+        </menu>
+    </item>
     <item android:title="Buslinien">
         <menu>
 
@@ -132,17 +149,5 @@
                 android:icon="@drawable/line_c_b"/>
         </menu>
     </item>
-    <item android:title="Sonstiges">
-        <menu>
-            <item
-                android:id="@+id/nav_rating"
-                android:icon="@android:drawable/btn_star_big_on"
-                android:title="App bewerten" />
-            <item
-                android:id="@+id/nav_donation"
-                android:icon="@drawable/donation"
-                android:title="Spende">
-            </item>
-        </menu>
-    </item>
+
 </menu>

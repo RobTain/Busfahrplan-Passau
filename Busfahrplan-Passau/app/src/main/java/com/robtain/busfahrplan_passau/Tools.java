@@ -116,6 +116,8 @@ public class Tools {
                     return SubmenuActivity.class;
                 case R.id.nav_donation:
                     return DonationActivity.class;
+                case R.id.nav_fav:
+                    return FavouritenActivity.class;
                 //TODO Rate App
                 default:
                     return StartActivity.class;
