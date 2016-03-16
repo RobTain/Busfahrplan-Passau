@@ -11,6 +11,7 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.AdapterView;
@@ -130,15 +131,30 @@ public class FavouritenActivity extends AppCompatActivity {
             busLines = new String[size];
             busStops = new String[size];
 
+           String letter;
             //fill values
             for (int i = 0; i < size; i++) {
                 int t = i + 1;
                 String tmp = keywords[t].trim();
                 String first = tmp.substring(0, tmp.length() - 2);
-                String second = tmp.substring(tmp.length()-1);
+                if ( (letter = first.substring(first.length()-1)).equals
+                        ("_")) {
+                    first = first.substring(0,first.length()-1);
+                }
+
+                String second = new StringBuffer(tmp).reverse().toString()
+                        .substring(0,2);
+                second = new StringBuffer(second).reverse().toString();
+                if ( (letter = second.substring(0,1)).equals("_")) {
+                    second = second.substring(1,2);
+                }
+                Log.e(second, second);
+
+
                 busLines[i] = first;
                 busStops[i] = second;
             }
+
 
             // get busstation objects
             fav = new LinkedList<BusStation>();
