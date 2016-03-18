@@ -64,5 +64,11 @@
     paar Favoriten aus!</string>
     <string name="Favourites_add">Favorisieren</string>
     <string name="Favourite_delete">Favorit entfernen</string>
+    <string name="search_text">Bitte geben Sie die Bushaltestelle ein:
+        </string>
+    <string name="search_title">Bushaltestelle suchen</string>
+    <string name="nav_fav">Favorisierte Bushaltestellen</string>
+    <string name="nav_search">Bushaltestelle suchen</string>
+
 
 </resources>

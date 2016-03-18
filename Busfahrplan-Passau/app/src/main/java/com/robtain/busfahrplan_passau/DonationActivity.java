@@ -96,5 +96,18 @@ public class DonationActivity extends AppCompatActivity {
         text.setMovementMethod(LinkMovementMethod.getInstance());
     }
 
-
+    /**
+     * return to startview
+     */
+    @Override
+    public void onBackPressed() {
+        DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
+        if (drawer.isDrawerOpen(GravityCompat.START)) {
+            drawer.closeDrawer(GravityCompat.START);
+        } else {
+            finish();
+            Intent menu = new Intent(DonationActivity.this, StartActivity.class);
+            startActivity(menu);
+        }
+    }
 }

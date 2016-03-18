@@ -3,15 +3,23 @@ package com.robtain.busfahrplan_passau;
 import android.content.Intent;
 import android.view.MenuItem;
 
+import java.io.Serializable;
 import java.util.LinkedList;
 //
 /**
  * provides methodes to reduce code duplication or set general settings
  */
-public class Tools {
+public class Tools implements Serializable {
+
+
+    private LinkedList<BusStation> busStationLinkedList;
     private String codeword;
     private BusStation busStation;
 
+
+    public LinkedList<BusStation> getBusStationLinkedList() {
+        return busStationLinkedList;
+    }
 
     /**
      * selects a class and set a keyword (keyword is a identifier for the
@@ -118,6 +126,8 @@ public class Tools {
                     return DonationActivity.class;
                 case R.id.nav_fav:
                     return FavouritenActivity.class;
+                case R.id.nav_search:
+                    return SearchActivity.class;
                 //TODO Rate App
                 default:
                     return StartActivity.class;
@@ -1865,5 +1875,60 @@ public class Tools {
                 break;
         }
         return list;
+    }
+
+    public void search(String input) {
+        LinkedList<BusStation> result = new LinkedList<BusStation>();
+        LinkedList<BusStation> tmp = new LinkedList<BusStation>();
+        Object o;
+        String[] keywords = searchHelper();
+        for (int i = 0; i < keywords.length; i++) {
+            tmp = findBusLine(keywords[i]);
+            for (int j = 0; j < tmp.size();j++) {
+                o = tmp.get(j);
+                BusStation bs = (BusStation) o;
+                if (bs.getTitle().equals(input)) {
+                    result.add(bs);
+                }
+            }
+
+        }
+
+        busStationLinkedList = result;
+    }
+
+    private String[] searchHelper() {
+        String[] keywords = new String[30];
+        keywords[0] = "1_2";
+        keywords[1] = "1";
+        keywords[2] = "2";
+        keywords[3] = "3_4";
+        keywords[4] = "3";
+        keywords[5] = "4";
+        keywords[6] = "5_6_K_P";
+        keywords[7] = "5_6_P_K";
+        keywords[8] = "7_E_R";
+        keywords[9] = "7_R_E";
+        keywords[10] = "8_9_Koenig_Kohl";
+        keywords[11] = "8_9_Kohl_Koenig";
+        keywords[12] = "10_Z_S";
+        keywords[13] = "10_S_Z";
+        keywords[14] = "11_Z_S";
+        keywords[15]= "11_S_Z";
+        keywords[16] = "K1_L_M";
+        keywords[17] = "K1_M_L";
+        keywords[18] = "K2_M_S";
+        keywords[19] = "K2_S_M";
+        keywords[20] = "K3_H_K";
+        keywords[21] = "K3_K_H";
+        keywords[22] = "K4_Z_S";
+        keywords[23] = "K4_S_Z";
+        keywords[24] = "78_Z_S";
+        keywords[25] = "78_S_Z";
+        keywords[26] = "79_Z_E";
+        keywords[27] = "79_E_Z";
+        keywords[28] = "CB_B_R";
+        keywords[29] = "CB_R_B";
+        return keywords;
     }
 }

@@ -5,9 +5,14 @@
     <item android:title="Generelles">
         <menu>
             <item
+                android:id="@+id/nav_search"
+                android:icon="@android:drawable/ic_menu_search"
+                android:title="@string/nav_search"></item>
+
+            <item
                 android:id="@+id/nav_fav"
                 android:icon="@drawable/favourites_added"
-                android:title="Favorisierte Buslinien" ></item>
+                android:title="@string/nav_fav" ></item>
             <item
                 android:id="@+id/nav_rating"
                 android:icon="@android:drawable/btn_star_big_on"
@@ -17,6 +22,7 @@
                 android:icon="@drawable/donation"
                 android:title="Spende">
             </item>
+
         </menu>
     </item>
     <item android:title="Buslinien">
