@@ -1887,7 +1887,9 @@ public class Tools implements Serializable {
             for (int j = 0; j < tmp.size();j++) {
                 o = tmp.get(j);
                 BusStation bs = (BusStation) o;
-                if (bs.getTitle().equals(input)) {
+                if (bs.getTitle().toLowerCase().replace("\n", "" ).contains
+                        (input.toLowerCase()
+                        )) {
                     result.add(bs);
                 }
             }
