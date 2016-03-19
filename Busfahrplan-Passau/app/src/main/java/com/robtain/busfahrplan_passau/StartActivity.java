@@ -1,9 +1,11 @@
 package com.robtain.busfahrplan_passau;
 //TODO App bewerten auf Link setzen
-//TODO Zoomfunktion
 
 
 import android.content.Intent;
+import android.graphics.Bitmap;
+import android.graphics.drawable.BitmapDrawable;
+import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
@@ -14,11 +16,9 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.view.MotionEvent;
 import android.view.View;
 import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
-import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.io.File;
@@ -27,7 +27,6 @@ import java.io.IOException;
 
 
 public class StartActivity extends AppCompatActivity {
-    private ImageView imageView;
     private boolean zoomout = true;
     private View view;
     private Tools tools;
@@ -81,11 +80,16 @@ public class StartActivity extends AppCompatActivity {
                     }
                 });
 
-        //set R.drawable to imageview
-        imageView = (ImageView) findViewById(R.id.lineplan);
-        imageView.setImageDrawable(getResources().getDrawable(R.drawable
-                .line_plan));
-        zoom();
+        ImageViewZoom image = (ImageViewZoom) findViewById(R.id.lineplan);
+        Drawable drawable = getResources().getDrawable(R.drawable.line_plan);
+        Bitmap bitmap = ((BitmapDrawable) drawable).getBitmap();
+        image.setImageBitmap(bitmap);
+        view.setLayerType(View.LAYER_TYPE_HARDWARE, null);
+        final Animation zoomout = AnimationUtils.loadAnimation(this, R.anim
+                .initialzoom);
+        image.setAnimation(zoomout);
+        view.setLayerType(View.LAYER_TYPE_NONE, null);
+
 
         //set File
         createFile();
@@ -115,45 +119,6 @@ public class StartActivity extends AppCompatActivity {
     }
 
 
-    private void zoom() {
-        //set hardware layer for animation performance
-        view.setLayerType(View.LAYER_TYPE_HARDWARE, null);
-        final Animation zoomout = AnimationUtils.loadAnimation(this, R.anim
-                .initialzoom);
-        imageView.setAnimation(zoomout);
-        view.setLayerType(View.LAYER_TYPE_NONE, null);
-        imageView.setOnTouchListener(new View.OnTouchListener() {
-
-
-            @Override
-            public boolean onTouch(View v, MotionEvent event) {
-                v.startAnimation(zoomout);
-                imageView.setAnimation(null);
-                switch (event.getAction() & MotionEvent.ACTION_MASK) {
-                    case MotionEvent.ACTION_DOWN:
-                        float x = event.getX();
-                        float y = event.getY();
-                        zoomhelper(x, y);
-                        break;
-                }
-                return true;
-            }
-        });
-    }
-
-    private void zoomhelper(float x, float y) {
-        if (zoomout) {
-            zoomout = !zoomout;
-            imageView.setScaleX(3);
-            imageView.setScaleY(3);
-            imageView.setPivotX(x);
-            imageView.setPivotY(y);
-        } else {
-            zoomout = !zoomout;
-            imageView.setScaleX(1);
-            imageView.setScaleY(1);
-        }
-    }
 
     /**
      * Back key will end application
