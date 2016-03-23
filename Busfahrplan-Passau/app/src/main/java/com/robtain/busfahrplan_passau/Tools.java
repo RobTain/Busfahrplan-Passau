@@ -1286,7 +1286,7 @@ public class Tools implements Serializable {
                 busStation = new BusStation("B. von Behr Straße", "11_Z_S",
                         "2");
                 list.add(busStation);
-                busStation = new BusStation("Bahnhofstraße", "v", "3");
+                busStation = new BusStation("Bahnhofstraße", "11_Z_S", "3");
                 list.add(busStation);
                 busStation = new BusStation("Carossastraße", "11_Z_S", "4");
                 list.add(busStation);
