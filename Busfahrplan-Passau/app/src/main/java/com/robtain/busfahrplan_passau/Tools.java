@@ -542,7 +542,7 @@ public class Tools implements Serializable {
                 list.add(busStation);
                 busStation = new BusStation("Jesuitenschlößl", "3", "10");
                 list.add(busStation);
-                busStation = new BusStation("Johann-Bergler-Straße", "3", "11");
+                busStation = new BusStation("Johann-Bergler Straße", "3", "11");
                 list.add(busStation);
                 busStation = new BusStation("Kremserstraße", "3", "12");
                 list.add(busStation);
@@ -716,7 +716,7 @@ public class Tools implements Serializable {
                 list.add(busStation);
                 busStation = new BusStation("Schellköpfing", "5_6_K_P", "41");
                 list.add(busStation);
-                busStation = new BusStation("Am Schnanzl", "5_6_K_P", "42");
+                busStation = new BusStation("Am Schanzl", "5_6_K_P", "42");
                 list.add(busStation);
                 busStation = new BusStation("Schulstraße", "5_6_K_P", "43");
                 list.add(busStation);
@@ -1500,13 +1500,13 @@ public class Tools implements Serializable {
                 list.add(busStation);
                 busStation = new BusStation("Am Schanzlturm", "K2_M_S", "11");
                 list.add(busStation);
-                busStation = new BusStation("Schmiedgase", "K2_M_S", "12");
+                busStation = new BusStation("Schmiedgasse", "K2_M_S", "12");
                 list.add(busStation);
                 busStation = new BusStation("Stadttheater", "K2_M_S", "13");
                 list.add(busStation);
                 busStation = new BusStation("ZOB Bussteig 4", "K2_M_S", "14");
                 list.add(busStation);
-                busStation = new BusStation("Zollamt Saming", "K2_M_S", "15");
+                busStation = new BusStation("Zollamt/Saming", "K2_M_S", "15");
                 list.add(busStation);
                 break;
             case "K3_K_H":
@@ -1552,7 +1552,7 @@ public class Tools implements Serializable {
                 busStation = new BusStation("Untere Schneckenbergstraße C",
                         "K3_K_H", "18");
                 list.add(busStation);
-                busStation = new BusStation("Wörthsstraße", "K3_K_H", "19");
+                busStation = new BusStation("Wörthstraße", "K3_K_H", "19");
                 list.add(busStation);
                 busStation = new BusStation("ZOB Bussteig 4", "K3_K_H", "20");
                 list.add(busStation);
@@ -1600,7 +1600,7 @@ public class Tools implements Serializable {
                 busStation = new BusStation("Untere Schneckenbergstraße C",
                         "K3_H_K", "18");
                 list.add(busStation);
-                busStation = new BusStation("Wörthsstraße", "K3_H_K", "19");
+                busStation = new BusStation("Wörthstraße", "K3_H_K", "19");
                 list.add(busStation);
                 busStation = new BusStation("ZOB Bussteig 4", "2", "20");
                 list.add(busStation);
@@ -1610,7 +1610,7 @@ public class Tools implements Serializable {
                 list.add(busStation);
                 busStation = new BusStation("Bahnhofstraße", "K4_Z_S", "2");
                 list.add(busStation);
-                busStation = new BusStation("Bernhrad-Setzer Straße",
+                busStation = new BusStation("Bernhard-Setzer Straße",
                         "K4_Z_S", "3");
                 list.add(busStation);
                 busStation = new BusStation("Brand", "K4_Z_S", "4");
@@ -1660,7 +1660,7 @@ public class Tools implements Serializable {
                 list.add(busStation);
                 busStation = new BusStation("Bahnhofstraße", "K4_S_Z", "2");
                 list.add(busStation);
-                busStation = new BusStation("Bernhrad-Setzer Straße",
+                busStation = new BusStation("Bernhard-Setzer Straße",
                         "K4_S_Z", "3");
                 list.add(busStation);
                 busStation = new BusStation("Brand", "K4_S_Z", "4");
