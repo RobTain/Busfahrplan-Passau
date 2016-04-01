@@ -128,7 +128,6 @@ public class Tools implements Serializable {
                     return FavouritenActivity.class;
                 case R.id.nav_search:
                     return SearchActivity.class;
-                //TODO Rate App
                 case R.id.nav_rating:
                     return RateAppActivity.class;
                 default:

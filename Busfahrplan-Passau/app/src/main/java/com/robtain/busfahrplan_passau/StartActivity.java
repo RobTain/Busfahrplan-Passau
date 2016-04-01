@@ -1,5 +1,5 @@
 package com.robtain.busfahrplan_passau;
-//TODO App bewerten auf Link setzen
+
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
