@@ -11,10 +11,20 @@ android {
         versionCode 1
         versionName "1.4.5"
     }
+
+    signingConfigs {
+        release {
+            storeFile file("busfahrplan-passau.keystore")
+            storePassword "ctueSG4V"
+            keyAlias "v1.4.5"
+            keyPassword "ctueSG4V"
+        }
+    }
     buildTypes {
         release {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
         }
     }
 }
