@@ -4,7 +4,10 @@
     <uses-sdk android:minSdkVersion="21"
         ></uses-sdk>
     <uses-permission
-        android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:label="@string/app_permission_label"
+        android:description="@string/app_permission_description"
+        android:protectionLevel="normal"></uses-permission>
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"

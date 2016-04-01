@@ -129,6 +129,8 @@ public class Tools implements Serializable {
                 case R.id.nav_search:
                     return SearchActivity.class;
                 //TODO Rate App
+                case R.id.nav_rating:
+                    return RateAppActivity.class;
                 default:
                     return StartActivity.class;
             }

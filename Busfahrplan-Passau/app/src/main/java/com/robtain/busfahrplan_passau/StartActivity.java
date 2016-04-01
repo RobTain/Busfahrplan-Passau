@@ -1,7 +1,8 @@
 package com.robtain.busfahrplan_passau;
 //TODO App bewerten auf Link setzen
 
-
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -129,7 +130,25 @@ public class StartActivity extends AppCompatActivity {
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            super.onBackPressed();
+            new AlertDialog.Builder(this)
+                    .setTitle(R.string.end_app_title)
+                    .setMessage(R.string.end_app_message)
+                    .setIcon(R.drawable.warning)
+                    .setNegativeButton(R.string.end_app_button_false, new
+                            DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface dialog, int which) {
+                                    dialog.cancel();
+                                }
+                            })
+                    .setPositiveButton(R.string.end_app_button_true,
+                            new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            finishAffinity();
+                        }
+                    })
+                    .show();
         }
     }
 

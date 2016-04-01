@@ -24,7 +24,7 @@ public class RateAppActivity extends AppCompatActivity {
         try {
 
             Intent rateIntent = rateIntentForUrl
-                    ("http://play.google.com/store/apps/");
+                    ("market://details?id=" + getPackageName());
             startActivity(rateIntent);
         } catch (ActivityNotFoundException e) {
             Intent rateIntent = rateIntentForUrl("http://play.google.com/store/apps/details");

@@ -199,6 +199,7 @@ public class FavouritenActivity extends AppCompatActivity {
                             ShowEntryActivity.class);
                    i.putExtra("keyword", bs.getLine());
                   i.putExtra("busstop", bs);
+                    i.putExtra("favourit", true);
                     startActivity(i);
                 }
 

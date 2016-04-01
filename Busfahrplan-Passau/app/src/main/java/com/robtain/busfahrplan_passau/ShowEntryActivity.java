@@ -38,9 +38,10 @@ public class ShowEntryActivity extends AppCompatActivity {
     private String keyword;
     private BusStation busStop;
     private Tools tools;
-    private boolean zoomout = true;
     private View view;
     private Boolean checkMenuRight;
+    private Boolean search;
+    private Boolean favourite;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -53,6 +54,9 @@ public class ShowEntryActivity extends AppCompatActivity {
         Intent i = getIntent();
         keyword = i.getStringExtra("keyword");
         busStop = (BusStation) i.getExtras().getSerializable("busstop");
+        search = i.getExtras().getBoolean("search");
+        favourite = i.getExtras().getBoolean("favourit");
+
 
         //set color statusbar
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -101,7 +105,13 @@ public class ShowEntryActivity extends AppCompatActivity {
                 });
 
         ImageViewZoom image = (ImageViewZoom) findViewById(R.id.searchResult);
-        Drawable drawable = getResources().getDrawable(findPicture());
+        Drawable drawable;
+        try {
+          drawable = getResources().getDrawable(findPicture());
+        } catch (Resources.NotFoundException e) {
+            drawable = getResources().getDrawable(R.drawable.errorpage);
+        }
+
         Bitmap bitmap = ((BitmapDrawable) drawable).getBitmap();
         image.setImageBitmap(bitmap);
         view.setLayerType(View.LAYER_TYPE_HARDWARE, null);
@@ -174,7 +184,7 @@ public class ShowEntryActivity extends AppCompatActivity {
         String path = "p" + keyword.toLowerCase() + "_" + busStop.getId();
 
        Resources res = getResources();
-        int id = res.getIdentifier(path, "drawable",getPackageName());
+        int id = res.getIdentifier(path, "drawable", getPackageName());
        return id;
     }
 
@@ -188,9 +198,17 @@ public class ShowEntryActivity extends AppCompatActivity {
         if (drawer.isDrawerOpen(GravityCompat.START)) {
             drawer.closeDrawer(GravityCompat.START);
         } else {
-            finish();
-            Intent menu = new Intent(ShowEntryActivity.this, SubmenuActivity.class);
-            menu.putExtra("keyword", keyword);
+            Intent menu;
+            if (search) {
+                menu = new Intent(ShowEntryActivity.this, SearchActivity.class);
+            } else if (favourite) {
+                menu = new Intent(ShowEntryActivity.this, FavouritenActivity
+                        .class);
+            } else {
+                finish();
+                menu = new Intent(ShowEntryActivity.this, SubmenuActivity.class);
+                menu.putExtra("keyword", keyword);
+            }
             startActivity(menu);
         }
     }
@@ -244,7 +262,6 @@ public class ShowEntryActivity extends AppCompatActivity {
                 BufferedWriter br = new BufferedWriter(new FileWriter(file));
                 if (text.toString() == null) {
                         br.write(newEntry);
-
                 } else {
                     br.write(text.toString());
                     br.write(" ");
@@ -314,7 +331,6 @@ public class ShowEntryActivity extends AppCompatActivity {
             Toast.makeText(getBaseContext(), "Bitte für mehr Speicherplatz " +
                     "sorgen", Toast.LENGTH_SHORT).show();
         }
-
 
         finish();
         Intent i = new Intent(ShowEntryActivity.this,

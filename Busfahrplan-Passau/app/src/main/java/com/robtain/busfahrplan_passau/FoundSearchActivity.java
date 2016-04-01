@@ -104,9 +104,10 @@ public class FoundSearchActivity extends AppCompatActivity {
 
         for (int j = 0; j < values.length; j++) {
             bs = foundSearch.get(j);
-            values[j] = tools.transformKeywordIntoTitle(bs.getLine()) + ": " +bs
+            values[j] = tools.transformKeywordIntoTitle(bs.getLine()) + ": \n" +bs
                     .getTitle();
         }
+
 
         // Define a new Adapter
         // First parameter - Context
@@ -134,6 +135,7 @@ public class FoundSearchActivity extends AppCompatActivity {
                         ShowEntryActivity.class);
                 i.putExtra("keyword", bs.getLine());
                 i.putExtra("busstop", bs);
+                i.putExtra("search", true);
                 startActivity(i);
             }
 

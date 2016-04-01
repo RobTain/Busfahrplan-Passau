@@ -119,15 +119,9 @@ public class SubmenuActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view,
                                     int position, long id) {
 
-                String itemValue = (String) listView.getItemAtPosition(position);
                 Object o = new Object();
-                for (int i = 0; i < busStations.size(); i++) {
-                    o = busStations.get(i);
-                    bs = (BusStation) o;
-                    if (bs.getTitle().equals(itemValue)) {
-                        break;
-                    }
-                }
+                o =  busStations.get(position);
+                bs = (BusStation) o;
 
                 finish();
                 Intent i = new Intent(SubmenuActivity.this,

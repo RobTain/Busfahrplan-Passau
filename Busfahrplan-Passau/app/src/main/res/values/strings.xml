@@ -55,7 +55,6 @@
     - Römerplatz</string>
     <string name="nav_CB_Roemerplatz_Bahnhofstr">Römerplatz - ZOB -
         Parkhaus Bahnhofstr.</string>
-    <string name="banner_ad_unit_id">ca-app-pub-3940256099942544/6300978111</string>
     <string name="nav_title_nav">Stadtwerke Passau - Busfahrpläne</string>
     <string name="donationTitleBar">Busfahrplan-Passau Spende</string>
     <string name="menu_right_favorites">Zeige Favoriten</string>
@@ -69,6 +68,14 @@
     <string name="search_title">Bushaltestelle suchen</string>
     <string name="nav_fav">Favorisierte Bushaltestellen</string>
     <string name="nav_search">Bushaltestelle suchen</string>
-
-
+    <string name="end_app_title">Busfahrplan-Passau beenden?</string>
+    <string name="end_app_message">Wollen Sie die App wirklich
+        beenden?</string>
+    <string name="end_app_button_true">App Schließen</string>
+    <string name="end_app_button_false">Abbrechen</string>
+    <string name="app_permission_label">Freigabe Schreibeprozess</string>
+    <string name="app_permission_description">Die App legt intern eine
+        Datei an, in der die Favoriten textuell gespeichert werden. Sonstige
+        Dateien fasst das Programm nicht an.
+    </string>
 </resources>
