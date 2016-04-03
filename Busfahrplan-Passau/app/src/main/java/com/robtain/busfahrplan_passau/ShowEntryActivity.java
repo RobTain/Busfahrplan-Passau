@@ -1,6 +1,7 @@
 package com.robtain.busfahrplan_passau;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
@@ -8,6 +9,7 @@ import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.preference.PreferenceManager;
 import android.support.design.widget.NavigationView;
 import android.support.v4.content.ContextCompat;
 import android.support.v4.view.GravityCompat;
@@ -42,6 +44,7 @@ public class ShowEntryActivity extends AppCompatActivity {
     private Boolean checkMenuRight;
     private Boolean search;
     private Boolean favourite;
+    private Boolean animation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -49,6 +52,10 @@ public class ShowEntryActivity extends AppCompatActivity {
         setContentView(R.layout.searchresult);
         view = this.findViewById(android.R.id.content);
         tools = new Tools();
+
+        SharedPreferences preferences = PreferenceManager
+                .getDefaultSharedPreferences(this);
+        animation = preferences.getBoolean("animation", true);
 
         //get keyword
         Intent i = getIntent();
@@ -114,11 +121,13 @@ public class ShowEntryActivity extends AppCompatActivity {
 
         Bitmap bitmap = ((BitmapDrawable) drawable).getBitmap();
         image.setImageBitmap(bitmap);
-        view.setLayerType(View.LAYER_TYPE_HARDWARE, null);
-        final Animation zoomout = AnimationUtils.loadAnimation(this, R.anim
-                .initialzoom);
-        image.setAnimation(zoomout);
-        view.setLayerType(View.LAYER_TYPE_NONE, null);
+        if (animation) {
+            view.setLayerType(View.LAYER_TYPE_HARDWARE, null);
+            final Animation zoomout = AnimationUtils.loadAnimation(this, R.anim
+                    .initialzoom);
+            image.setAnimation(zoomout);
+            view.setLayerType(View.LAYER_TYPE_NONE, null);
+        }
 
     }
 

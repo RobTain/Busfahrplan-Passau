@@ -130,6 +130,8 @@ public class Tools implements Serializable {
                     return SearchActivity.class;
                 case R.id.nav_rating:
                     return RateAppActivity.class;
+                case R.id.nav_settings:
+                    return SettingsActivity.class;
                 default:
                     return StartActivity.class;
             }

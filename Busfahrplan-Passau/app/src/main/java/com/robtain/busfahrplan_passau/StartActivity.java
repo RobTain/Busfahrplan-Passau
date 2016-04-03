@@ -4,12 +4,14 @@ package com.robtain.busfahrplan_passau;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Bitmap;
 import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Environment;
+import android.preference.PreferenceManager;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -31,12 +33,14 @@ public class StartActivity extends AppCompatActivity {
     private boolean zoomout = true;
     private View view;
     private Tools tools;
+    private Boolean animation;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.start);
         view = this.findViewById(android.R.id.content);
+        initialSetting();
 
         //set color statusbar
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
@@ -85,17 +89,33 @@ public class StartActivity extends AppCompatActivity {
         Drawable drawable = getResources().getDrawable(R.drawable.line_plan);
         Bitmap bitmap = ((BitmapDrawable) drawable).getBitmap();
         image.setImageBitmap(bitmap);
-        view.setLayerType(View.LAYER_TYPE_HARDWARE, null);
-        final Animation zoomout = AnimationUtils.loadAnimation(this, R.anim
-                .initialzoom);
-        image.setAnimation(zoomout);
-        view.setLayerType(View.LAYER_TYPE_NONE, null);
-
+        if (animation) {
+            view.setLayerType(View.LAYER_TYPE_HARDWARE, null);
+            final Animation zoomout = AnimationUtils.loadAnimation(this, R.anim
+                    .initialzoom);
+            image.setAnimation(zoomout);
+            view.setLayerType(View.LAYER_TYPE_NONE, null);
+        }
 
         //set File
         createFile();
 
     }
+
+    private void initialSetting() {
+        SharedPreferences preferences = PreferenceManager
+                .getDefaultSharedPreferences(this);
+        if(!preferences.contains("animation")) {
+            SharedPreferences.Editor editor = preferences.edit();
+            editor.putBoolean("animation", true);
+            animation = true;
+            editor.apply();
+        } else {
+            animation = preferences.getBoolean("animation", true);
+        }
+
+    }
+
 
     private void createFile() {
         if (isExternalStorageWritable()) {

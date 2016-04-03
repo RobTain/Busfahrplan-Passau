@@ -78,4 +78,10 @@
         Datei an, in der die Favoriten textuell gespeichert werden. Sonstige
         Dateien fasst das Programm nicht an.
     </string>
+    <string name="nav_settings">Einstellungen</string>
+    <string name="nav_donation">Spende</string>
+    <string name="nav_rate">App bewerten</string>
+    <string name="settings_animation">Wollen Sie die Animation
+        ausschalten?</string>
+    <string name="settings_title">Einstellungen</string>
 </resources>
